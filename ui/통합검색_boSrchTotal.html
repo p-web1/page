@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>컨텐츠 타입별 템플릿</title>
+	<meta name="Keywords" content="정선군청 컨텐츠 타입별 템플릿" />
+	<meta name="Description" content="" />
+	<meta name="Author" content="" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" href="../common/css/fonts.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/common_style.css" />
+	<link rel="stylesheet" href="../common/css/print.css" media="print" />
+	<link rel="stylesheet" href="../common/css/jquery-ui.min.css" />
+
+	<script src="../common/js/jquery-1.12.2.min.js"></script>
+	<script src="../common/js/jquery.easing.1.3.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../common/js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="../common/js/puble_common.js"></script>
+	<script src="../common/js/jquery.bxslider.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/jquery.cookie.js"></script>
+	<script src="../common/js/date.js"></script>
+	<script src="../common/js/util.js"></script>
+	<script src="../common/js/utillity.js"></script>
+	<script src="../common/js/jquery-dateFormat.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/conts.css" />
+	<script src="js/script.js"></script>
+	<style>
+	/* LAYOUTS
+	----------------------------*/
+	/* Hdr */
+	#Hdr {position: relative;}
+	#Hdr,
+	#Sub {padding: 0 10px;}
+	@media screen and (min-width: 1000px){
+		#Hdr,
+		#Sub {padding: 0;}
+	}
+
+	/* qckRefSiteArea */
+	.qckRefSiteArea {display: none;background-color: #f7f7f7;border-bottom: 1px solid #e5e5e5;}
+	.qckRefSiteArea .qckRefSite {width: 1000px;margin: 0 auto;} 
+	@media screen and (min-width: 1000px){
+		.qckRefSiteArea {display: block;}
+	}
+
+	/* totalSrchArea */
+	.totalSrchArea {max-width: 1000px;margin: 0 auto;}
+
+	/* hdrInfoArea */
+	.hdrInfoArea .logo {margin-bottom: 10px;margin: 0 auto;}
+	@media screen and (min-width: 1000px){
+		.hdrInfoArea {overflow: hidden;margin-top: 20px;}
+		.hdrInfoArea .logo {float: left;}
+		.hdrInfoArea .srchHdrTotal2 {float: right;width: 80%;}
+	}
+
+
+	/* UI 
+	------------------------------------------------*/
+
+	.logo {width: 150px;padding-top: 18px;}
+	.logo img {width: 100%;}
+
+	/*  srchHdrTotal2 */
+	.srchHdrTotal2 {width: 100%;font-size: 16px;margin-bottom: 60px;}
+	.srchHdrTotal2 select {font-size: 16px;}
+	.srchHdrTotal2-inner {position: relative;width: 100%;height: 50px;padding: 0;}
+	.srchHdrTotal2-groupSmit,
+	.srchHdrTotal2-groupSort,
+	.srchHdrTotal2-groupTxt {float: left;height: 100%;vertical-align: middle;}
+	.srchHdrTotal2-groupChk {position: absolute;right: 0;bottom: -30px;}
+	.srchHdrTotal2-groupSmit {width: 60px;}
+	.srchHdrTotal2-groupSort {width: 104px;position: relative;}
+	.srchHdrTotal2-groupSort:before {display: none;position: absolute;right: 0;top: 0;width: 20px;height: 108%;background-color: #fff;content: '';}
+	.srchHdrTotal2-groupTxt {width: calc(100% - 164px);border-width: 2px 0;}
+	.srchHdrTotal2-groupSort,
+	.srchHdrTotal2-groupTxt,
+	.srchHdrTotal2-smit {border-style: solid;}
+	.srchHdrTotal2-groupSort{border-width: 2px 0 2px 2px;}
+	.srchHdrTotal2-groupTxt {border-width: 2px 0;}
+	.srchHdrTotal2-smit,
+	.srchHdrTotal2-groupSort select,
+	.srchHdrTotal2-iptTxt {width: 100%;height: 100%;padding: 0 10px;}
+	.srchHdrTotal2-smit {border-width: 2px 2px 2px 0;background: #fff url(/common/images/btn-search-header.gif) 50% 50% no-repeat;-webkit-background-size: 20px;background-size: 20px;font-size: 0;}
+	@media screen and (min-width: 1000px){
+		.srchHdrTotal2-inner {overflow: hidden;padding-right: 150px;}
+		.srchHdrTotal2-groupChk {right: 0;bottom: 12px;}
+	}
+
+	</style>
+
+	<script>
+	$(function(){
+		// 아래의 스크립트는 통함검색  기능을 임시적으로 구현한 스크립트입니다. 추가 하지 말아 주세요.   
+		var $srchResult = $('.srchTotalResult-conts'),
+			$tabSrchTotalResult = $('.tabSrchTotalResult'),
+			active = 'active';
+		
+		// 결과 없음 숨기기
+		//$srchResult.children().hide().eq(0).show();
+		
+		// 탭에 이벤트 적용
+		/* 
+		$('.tabSrchTotalResult').find('li').each(function(idx, elem){
+			$elem = $(elem);
+			$elem.click(function(){
+				$this = $(this);
+				$this.addClass(active).siblings().removeClass(active);
+				$srchResult.children().eq( (1 < idx && idx < 5 ? 1 : idx-2) ).show().siblings().hide();
+			});
+		});
+		*/
+	});
+	</script>
+</head>
+
+<body>
+	<!-- page-wrap -->
+	<div class="page-wrap">
+		<!-- Hdr -->
+		<header id="Hdr">
+			<div class="totalSrchArea">
+				<div class="qckRefSiteArea">
+					<div class="qckRefSite">
+						<a href="/portal"> <img src="../common/images/ico-home2.png" alt="" />정선군청</a>
+						<a href="/portal/openadmin/complaints/complaintsguide/adminguide" target="_blank" title="새 창 이동">열린군정</a>
+						<a href="/portal/admininfo/openinfo/systemguide" target="_blank" title="새 창 이동">행정정보</a>
+						<a href="/portal/partinfo/lifewelfare/residentsupport/basic" target="_blank" title="새 창 이동">분야별정보</a>
+						<a href="/portal/jeongseongun/generalsituation/history" target="_blank" title="새 창 이동">정선군소개</a>
+						<a href="/governor" target="_blank" title="새 창 이동">열린군수실</a>
+					</div>
+				</div>
+				
+				<form action="" method="" class="hdrInfoArea">
+					<h1 class="logo">
+						<a href="/">
+							<img src="images/common/img-logo.png" alt="정선군" />
+						</a>
+					</h1>
+					
+					<div action="/portal/search" method="post" class="srchHdrTotal2">
+						<fieldset>
+							<legend class="blind"> 통합검색 폼 </legend>
+							<div class="srchHdrTotal2-inner">
+								<div class="srchHdrTotal2-groupSort">
+									<label for="Sort" class="blind">분류 선택</label>
+									<select name="searchCondition" id="Sort">
+										<option value="">통합검색</option>
+										<option value="news">정선뉴스</option>
+										<option value="webdoc">웹문서</option>
+										<option value="file">첨부파일</option>
+										<option value="image">이미지</option>
+										<option value="staff">직원정보</option>
+										<option value="menu">메뉴</option>
+									</select>
+								</div>
+								
+								<div class="srchHdrTotal2-groupTxt">
+									<label for="Txt" class="blind">검색어 입력</label>
+									<input type="text" name="searchKeyword" id="Txt" class="srchHdrTotal2-iptTxt"/>
+								</div>
+								
+								<div class="srchHdrTotal2-groupChk">
+									<input type="checkbox" id="chkInSrch" />
+									<label for="chkInSrch">결과 내 재검색</label>
+								</div>
+								
+								<div class="srchHdrTotal2-groupSmit">
+									<input type="submit" value="검색" class="srchHdrTotal2-smit"/>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				
+					<div class="boSrchTotalArea">
+						<dl class="qckPeriod">
+							<dt class="qckPeriod-tit">기간</dt>
+							<dd class="qckPeriod-conts">
+								<a href="#" class="active">
+									전체
+								</a>
+								<a href="#">
+									1주
+								</a>
+								<a href="#">
+									1개월
+								</a>
+								<a href="#">
+									1년
+								</a>
+							</dd>	
+						</dl>
+						
+						<fieldset class="boSrchPeriod">
+							<legend class="blind">기간 검색</legend>
+							<div class="boSrchPeriod-group boSrchPeriod-group-data-start">
+								<label for="periodStart" class="boSrchPeriod-label">시작일 </label>
+								<input type="text" id="periodStart" class="boSrchPeriod-iptTxt datePicker skinIptTxt" />
+							</div>
+							<div class="boSrchPeriod-group boSrchPeriod-group-data-end">
+								<label for="periodEnd" class="boSrchPeriod-label">종료일 </label>
+								<input type="text" id="periodEnd" class="boSrchPeriod-iptTxt datePicker skinIptTxt" />
+							</div>
+							
+							<input type="submit" value="검색" class="boSrchPeriod-btnBo skinBtnBo skinBtnBo-data-pos"/>
+						</fieldset>	
+						
+						<dl class="qckPopularSrchWord">
+							<dt class="qckPopularSrchWord-tit">인기검색</dt> 
+							<dd class="qckPopularSrchWord-conts">
+								<a href="#"><span class="qckPopularSrchWord-num qckPopularSrchWord-num-data-first">1</span> 캠핑</a>
+								<a href="#"><span class="qckPopularSrchWord-num">2</span> 전통</a>
+								<a href="#"><span class="qckPopularSrchWord-num">3</span> 시장</a>
+								<a href="#"><span class="qckPopularSrchWord-num">4</span> 양양서핑</a>
+								<a href="#"><span class="qckPopularSrchWord-num">5</span> 수영장</a>
+							</dd>
+						</dl>
+					</div>
+				</form>
+			
+			</div>
+		</header>
+		<!--// Hdr -->
+		
+		<!-- #Sub -->
+		<div id="Sub" >
+			<!-- contsArea -->
+			<div class="contsArea skinContainer">
+				<!-- srchTotalResult -->
+				<section class="srchTotalResult"> 
+					<h4 class="srchTotalResult-tit">
+						<b>&quot;정보&quot;</b>에 대한 통합검색 결과는 총 <em class="skinFont-bold skinColor-red">35건</em> 입니다.
+					</h4>
+					
+					<ul class="tabSrchTotalResult">
+						<li class="active">
+							<a href="#A-Result">통합검색 <br />(0)</a>
+						</li>
+						<li>
+							<a href="#A-Result">정선뉴스 <br />(10)</a>
+						</li>
+						<li>
+							<a href="#A-Result">민원서식 <br />(10)</a>
+						</li>
+						<li>
+							<a href="#A-Result">웹문서<br />(25)</a>
+						</li>
+						<li>
+							<a href="#A-Result">첨부파일<br />(25)</a>
+						</li>
+						<li>
+							<a href="#A-Result">이미지 <br />(25)</a>
+						</li>
+						<li>
+							<a href="#A-Result">직원정보<br />(25)</a>
+						</li>
+						<li>
+							<a href="#A-Result">메뉴<br />(25)</a>
+						</li>
+					</ul>
+					
+					<div id="A-Result" class="srchTotalResult-conts">
+						<!-- 결과 없음 -->
+						<section class="noResult">
+							<h5 class="noResult-tit skinColor-blue">"정보"에 대한 검색결과가 없습니다.</h5>
+							<ul>
+								<li>- 단어의 철자가 정확한지 확인해 보세요.</li>
+								<li>- 한글을 영어로 혹은 영어를 한글로 입력했는지 확인해 보세요.</li>
+								<li>- 검색어의 단어 수를 줄이거나, 보다 일반적인 검색어로 다시 검색해 보세요.</li>
+								<li>- 두 단어의 이상의 검색어 인 경우, 띄어쓰기를 확인 해보세요.</li>
+							</ul>
+						</section>
+						<!--// 결과 없음 -->
+						
+						<!-- 통합검색 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">웹문서 검색결과 (총 25건)</span></h5>
+							</div>
+							<div class="srchResult-contsGroup">	
+								<dl class="srchResult-conts srchResult-conts-data-btnUtil">
+									<dt class="srchResult-contsTit">
+										<strong class="skinColor-blue">
+											[공지사항]
+										</strong>
+										2016년 환경교육<em class="srchResult-marker">정보</em>
+									</dt>
+									<dd>
+										<div class="srchResult-contsTxt">글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 <em class="srchResult-marker">정보</em>가 들어갑니다. 글 내용이 들어갑니다.글 내용이 들어갑니다.글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다.</div>
+									</dd>
+									<dd class="srchResult-contsMeta">
+										군정소식>공지사항 
+									</dd>
+									<dd class="srchResult-btnContsGroup">
+										<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+									</dd>
+								</dl>
+							</div>
+						</section>
+						<!--// 통합검색 -->
+						
+						<!-- 정선뉴스, 웹문서 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">웹문서 검색결과 (총 25건)</span></h5>
+							</div>
+							
+							<div class="srchResult-contsGroup">	
+								<dl class="srchResult-conts srchResult-conts-data-img">
+									<dt  class="srchResult-contsTit">
+										<strong class="skinColor-blue">
+											[공지사항]
+										</strong>
+										2016년 환경교육 <em class="srchResult-marker">정보</em>
+									</dt>
+									<dd class="srchResult-contsImg"><img src="../common/images/img-total-no-thumb.gif" alt="이미지 없음" /></dd>
+									<dd>
+										<div class="srchResult-contsTxt">글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 <em class="srchResult-marker">정보</em>가 들어갑니다. 글 내용이 들어갑니다.글 내용이 들어갑니다.글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다.</div>
+									</dd>
+									<dd class="srchResult-contsMeta">
+										키워드: 정보, 민원
+									</dd>
+									<dd class="srchResult-btnContsGroup">
+										<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+									</dd>
+								</dl>
+							</div>
+							
+							<div class="srchResult-contsGroup">	
+								<dl class="srchResult-conts">
+									<dt  class="srchResult-contsTit">
+										<strong class="skinColor-blue">
+											[공지사항]
+										</strong>
+										2016년 환경교육 <em class="srchResult-marker">정보</em>
+									</dt>
+									<dd>
+										<div class="srchResult-contsTxt">글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다. 글<em class="srchResult-marker">정보</em>가 들어갑니다. 글 내용이 들어갑니다.글 내용이 들어갑니다.글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다.</div>
+									</dd>
+									<dd class="srchResult-contsMeta">
+										군정소식>공지사항 | 2017-03-25
+									</dd>
+									<dd class="srchResult-btnContsGroup">
+										<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+									</dd>
+								</dl>
+							</div>
+							
+						</section>
+						<!--// 정선뉴스, 웹문서 -->
+						
+						<!-- 첨부파일 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">첨부파일 검색결과 (총 25건)</span></h5>
+							</div>
+							<div class="srchResult-contsGroup">	
+								<dl class="srchResult-conts srchResult-conts-data-btnUtil srchResult-conts-data-more">
+									<dt  class="srchResult-contsTit">
+										<strong class="skinColor-blue">
+											[공지사항]
+										</strong>
+										2016년 환경교육<em class="srchResult-marker">정보</em>
+									</dt>
+									<dd>
+										<div class="srchResult-contsTxt">글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 <em class="srchResult-marker">정보</em>가 들어갑니다. 글 내용이 들어갑니다.글 내용이 들어갑니다.글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다.</div>
+									</dd>
+									<dd class="srchResult-contsMeta">
+										군정소식>공지사항 | 2017-03-25
+									</dd>
+									<dd class="srchResult-btnContsGroup">
+										<div class="contsBtn">
+											<a href="#" class="contsBtn-download">다운받기</a>
+										</div>
+										<div class="contsBtn">
+											<a href="#" class="contsBtn-more">자세히보기</a>
+										</div>
+										<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+									</dd>
+								</dl>
+							</div>
+						</section>
+						<!--// 첨부파일 -->
+						
+						<!-- 이미지 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">이미지 검색결과 (총 25건)</span></h5>
+							</div>
+							
+							<ul class="boGallery photo">
+								<li>
+									<a href="/>">
+										<div class="boGallery-img">	
+											<div class="thumbnail"> 
+												<div class="centered"> 
+													<img src="../common/images/img-no-gallery-list.gif" alt="이미지 없음" />"
+												</div> 
+											</div> 
+										</div>
+										<div class="boGallery-sbj">
+											<div class="boGallery-sbjTxt">
+												게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.
+											</div>
+										</div>
+										<time data-hidden="tablet mob">2017-03-24</time>
+									</a>
+								</li>
+								<li>
+									<a href="/>">
+										<div class="boGallery-img">	
+											<div class="thumbnail"> 
+												<div class="centered"> 
+													<img src="../common/images/img-no-gallery-list.gif" alt="<c:out value="${item.title}" />"
+												</div> 
+											</div> 
+										</div>
+										<div class="boGallery-sbj">
+											<div class="boGallery-sbjTxt">
+												게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.
+											</div>
+										</div>
+										<time data-hidden="tablet mob">2017-03-24</time>
+									</a>
+								</li>
+								<li>
+									<a href="/>">
+										<div class="boGallery-img">	
+											<div class="thumbnail"> 
+												<div class="centered"> 
+													<img src="../common/images/img-no-gallery-list.gif" alt="<c:out value="${item.title}" />"
+												</div> 
+											</div> 
+										</div>
+										<div class="boGallery-sbj">
+											<div class="boGallery-sbjTxt">
+												게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.
+											</div>
+										</div>
+										<time data-hidden="tablet mob">2017-03-24</time>
+									</a>
+								</li>
+								<li>
+									<a href="/>">
+										<div class="boGallery-img">	
+											<div class="thumbnail"> 
+												<div class="centered"> 
+													<img src="../common/images/img-no-gallery-list.gif" alt="<c:out value="${item.title}" />"
+												</div> 
+											</div> 
+										</div>
+										<div class="boGallery-sbj">
+											<div class="boGallery-sbjTxt">
+												게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.게시글 타이틀은 두 줄까지 나옵니다.
+											</div>
+										</div>
+										<time data-hidden="tablet mob">2017-03-24</time>
+									</a>
+								</li>
+							</ul>
+							<div class="skinTxa-right">
+								<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+							</div>
+						</section>
+						<!--// 이미지 -->
+						
+						<!-- 직원정보 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">직원정보 검색결과 (총 25건)</span></h5>
+							</div>
+							
+							<table class="skinTb skinTb-data-resList skinTb-data-group">
+								<caption class="blind">직원소개 대한 부서명, 팀명, 직위, 직원명, 업무, 전화번호 안내</caption>
+								<thead data-hidden="mob">
+									<tr>
+										<th scope="col">부서명</th>
+										<th scope="col" data-hidden="tablet">팀명</th>
+										<th scope="col" data-hidden="tablet">직위</th>
+										<th scope="col">직원명</th>
+										<th scope="col" data-hidden="pc tablet">직원명 / 팀명 / 직위</th>
+										<th scope="col">전화번호</th>
+										<th scope="col">업무</th>
+									</tr>
+								</thead>
+								<tbody class="skinTxa-center">
+									<tr>
+										<td class="skinTb-group" data-seq="first">환경산림과</td>
+										<td data-hidden="tablet mob">환경산림과</td>
+										<td data-hidden="tablet mob">과장</td>
+										<td data-hidden="mob">홍규학</td>
+										<td class="skinTxa-left" data-hidden="pc tablet">홍규학 / 환경산림과 / 과장</td>
+										<td>033-560-2340</td>
+										<td class="skinTxa-left">
+											<ul class="listLv2">
+												<li>환경산림과 업무총괄</li>
+												<li>환경산림과 업무총괄</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="skinTb-group" data-seq="first">환경산림과</td>
+										<td data-hidden="tablet mob">환경산림과</td>
+										<td data-hidden="tablet mob">과장</td>
+										<td data-hidden="mob">홍규학</td>
+										<td class="skinTxa-left" data-hidden="pc tablet">홍규학 / 환경산림과 / 과장</td>
+										<td>033-560-2340</td>
+										<td class="skinTxa-left">
+											<ul class="listLv2">
+												<li>환경산림과 업무총괄</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="skinTb-group" data-seq="first">환경산림과</td>
+										<td data-hidden="tablet mob">환경산림과</td>
+										<td data-hidden="tablet mob">과장</td>
+										<td data-hidden="mob">홍규학</td>
+										<td class="skinTxa-left" data-hidden="pc tablet">홍규학 / 환경산림과 / 과장</td>
+										<td>033-560-2340</td>
+										<td class="skinTxa-left">
+											<ul class="listLv2">
+												<li>환경산림과 업무총괄</li>
+												<li>환경산림과 업무총괄</li>
+												<li>환경산림과 업무총괄</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<div class="skinTxa-right">
+								<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+							</div>
+						</section>
+						<!--// 직원정보 -->
+						
+						<!-- 메뉴 -->
+						<section class="srchResult">
+							<div class="srchResult-titGroup">
+								<h5 class="srchResult-tit"><span class="listLv">메뉴 검색결과 (총 25건)</span></h5>
+							</div>
+							
+							<div class="srchResult-contsGroup">	
+								<dl class="srchResult-conts">
+									<dt  class="srchResult-contsTit">
+										<strong class="skinColor-blue">
+											[정보목록]  
+										</strong>
+										HOME > 정보공개 > 행정정보공개 > 정보목록
+									</dt>
+									<dd>
+										<div class="srchResult-contsTxt">글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 <em class="srchResult-marker">정보</em>가 들어갑니다. 글 내용이 들어갑니다.글 내용이 들어갑니다.글 내용이 들어갑니다. 글 내용이 들어갑니다. 글 내용이 들어갑니다.</div>
+									</dd>
+									<dd class="srchResult-contsMeta">
+										키워드: <em class="srchResult-marker">정보</em>, 메뉴
+									</dd>
+									<dd>
+									<dd class="srchResult-btnContsGroup">
+										<a href="#" class="srchResult-btnMore skinBtnBo skinBtnBo-data-pos">더보기</a>
+									</dd>
+								</dl>
+							</div>
+						</section>
+						<!--// 메뉴 -->
+						
+					</div>
+				</section>
+				<!--// srchTotalResult -->
+				
+			</div>
+			<!--// contsArea -->
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		includeLayout();
+	});
+
+	function includeLayout(){
+		var includeArea = $('[data-include]');
+		var self, url;
+		$.each(includeArea, function() {
+			self = $(this);
+			url = self.data("include");
+			self.load(url, function() {
+			self.removeAttr("data-include");
+			});
+		});
+	}
+</script>
+
+</html>

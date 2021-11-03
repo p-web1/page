@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>컨텐츠 타입별 템플릿</title>
+	<meta name="Keywords" content="정선군청 컨텐츠 타입별 템플릿" />
+	<meta name="Description" content="" />
+	<meta name="Author" content="" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" href="../common/css/fonts.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/common_style.css" />
+	<link rel="stylesheet" href="../common/css/print.css" media="print" />
+	<link rel="stylesheet" href="../common/css/jquery-ui.min.css" />
+
+	<script src="../common/js/jquery-1.12.2.min.js"></script>
+	<script src="../common/js/jquery.easing.1.3.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../common/js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="../common/js/puble_common.js"></script>
+	<script src="../common/js/jquery.bxslider.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/jquery.cookie.js"></script>
+	<script src="../common/js/date.js"></script>
+	<script src="../common/js/util.js"></script>
+	<script src="../common/js/utillity.js"></script>
+	<script src="../common/js/jquery-dateFormat.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/conts.css" />
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!-- page-wrap -->
+	<div class="page-wrap">
+		<!-- #Sub -->
+		<div id="Sub" >
+			<!-- contsArea -->
+			<div class="contsArea skinContainer">
+
+				<h4 class="titLv">게시판 작성</h4>
+				<ul class="listLv4">
+					<li>게시판 전체 화면 확인</li>
+					<li>개발 적용시 전체 리스트 혹은 주석 참조</li>
+				</ul>
+				<!-- 기본 게시판   -->
+				<div class="skinTb skinTb-data-resWrite">
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2"> 
+							*<span class="blind">필수</span>제목
+						</div>
+						<div class="skinTb-td">
+							<input type="text" class="skinIptTxt col12"/>
+						</div>
+					</div>
+					
+					<!-- 작성자 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<lable for="">
+								*<span class="blind">필수</span>
+								작성자
+							</lable>
+						</div>
+						<div class="skinTb-td">
+							<input type="text" value="홍길동" id="" readonly="readonly"/>
+						</div>
+					</div>
+					<!--// 작성자 -->
+					
+					<!-- 비밀번호 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2"> 
+							<label for="">
+								*<span class="blind">필수</span>비밀번호
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<input type="text" id="" class="skinIptPass"/>
+							<p class="skinColor-fmInfo">※비밀번호는 수정 또는 삭제 시 필요합니다. 영문, 숫자, 특수 문자 3가지 이상 혼합하여 8자 이상</p>
+						</div>
+					</div>
+					<!--// 비밀번호 -->
+					
+					<!-- 소멸기한 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<label for=""> 
+								*<span class="blind">필수</span> 소멸기한
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<div>
+								<input type="checkbox" id="permanentPv"/>
+								<label for="permanentPv">영구보존</label>
+								
+								<label for="savePeriod" class="blind">소멸기한</label>
+								<input type="text" id="savePeriod" class="datePicker skinIptTxt col6 skinVta-middle"/> 
+							</div>
+							<span class="skinColor-fmInfo">※소멸 기한 지정 날짜에 등록된 게시 글이 자동으로 삭제됩니다.</span>
+						</div>
+					</div>
+					<!--// 소멸기한 -->
+					
+					<!-- 내용 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<label for=""> 
+								*<span class="blind">필수</span>내용
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<textarea name="" id="" rows="4" cols="50" class="col12"></textarea>
+						</div>
+					</div>
+					<!--// 내용 -->
+					
+					<!-- 첨부파일 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<label for=""> 
+								*<span class="blind">필수</span>내용
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<div class="ctrlFile">
+								<input type="button"  value="파일 선택" class="ctrlFile-btnFile skinBtnBo skinBtnBo-data-pos"/>
+								<span class="ctrlFile-fileTxt">선택된 파일이 없음</span>
+								<input type="file" class="blind"/>
+								<input type="button"  value="파일 제거" class="ctrlFile-btnDel skinBtnDel"/>
+							</div>
+							
+							<div class="ctrlFile">
+								<input type="button"  value="파일 선택" class="ctrlFile-btnFile skinBtnBo skinBtnBo-data-pos"/>
+								<span class="ctrlFile-fileTxt">선택된 파일이 없음</span>
+								<input type="file" class="blind"/>
+								<input type="button"  value="파일 제거" class="ctrlFile-btnDel skinBtnDel"/>
+							</div>				
+						</div>
+					</div>
+					<!--// 첨부파일 -->
+				</div>
+				<!--// 기본 게시판   -->
+
+				<!-- 버튼 -->
+				<div class="skinBtnBo_box skinTxa-right">
+					<a href="#" class="skinBtnBo skinBtnBo-data-neg">등록</a>
+					<a href="#" class="skinBtnBo skinBtnBo-data-pos">목록</a>
+				</div>
+				<!--// 버튼 -->
+
+				<!-- 민원게시판 -->
+				<div class="skinTb skinTb-data-resWrite">
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2"> 
+							*<span class="blind">필수</span>제목
+						</div>
+						<div class="skinTb-td">
+							<input type="text" class="skinIptTxt col12"/>
+						</div>
+					</div>
+					
+					<!-- 작성자 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<lable for="">
+								*<span class="blind">필수</span>
+								작성자
+							</lable>
+						</div>
+						<div class="skinTb-td">
+							<input type="text" value="홍길동" id="" readonly="readonly"/>
+						</div>
+					</div>
+					<!--// 작성자 -->
+					
+					<!-- 비밀번호 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2"> 
+							<label for="EmailId">
+								*<span class="blind">필수</span>이메일
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<div class="emailAddr">
+								<input type="text" id="EmailId" value="" class="skinIptTxt"/>
+								@
+								<label for="EmailWrite" class="blind">이메일 주소 입력</label>
+								<input type="text" id="EmailWrite" class="skinIptTxt"/>
+								
+								<label for="EmailAddr" class="blind">이메일 주소 선택</label>
+								<select id="EmailAddr" class="skinSelectBox">
+									<option value="" selected="selected">선택</option>
+									<option value="">gmail.com</option>
+									<option value="">hanmail.net</option>
+									<option value="">naver.com</option>
+									<option value="">nate.com</option>
+									<option value="">korea.com</option>
+									<option value="">yahoo.com</option>
+									<option value="">hotmail.com</option>
+									<option value="">chol.com</option>
+									<option value="">netian.com</option>
+									<option value="">dreamwiz.com</option>
+									<option value="">live.com</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--// 비밀번호 -->
+					
+					<!-- 전화번호 -->
+					<div class="skinTb-tr">	
+						<div class="skinTb-th col2">
+							* 전화번호
+						</div>
+						<div class="skinTb-td col10">
+							<label for="Phone01" class="blind">전화번호 앞자리</label>
+							<input type="text" id="Phone01" value="" class="skinIptTxt col3"/>
+							-
+							<label for="Phone02" class="blind">전화번호 중간자리</label>
+							<input type="text" id="Phone02" value="" class="skinIptTxt col3"/>
+							-
+							<label for="Phone03" class="blind">전화번호 뒷자리</label>
+							<input type="text" id="Phone03" value="" class="skinIptTxt col3"/>
+							<p class="skinColor-fmInfo skinMt-xsmall">※ 숫자만 입력 가능합니다.</p>
+						</div>
+					</div>
+					<!--// 전화번호 -->
+					
+					<!-- 공개설정 -->
+					<div class="skinTb-tr">	
+						<div class="skinTb-th col2">
+							* 공개설정
+						</div>
+						<div class="skinTb-td col10">
+							<input type="radio" id="Public" name="public" class="skinIptRadio"/>
+							<label for="Public">공개</label>
+							
+							<input type="radio" id="Secret" name="public" class="skinIptRadio"/>
+							<label for="Secret">비공개</label>
+						</div>
+					</div>
+					<!--// 공개설정 -->
+					
+					<!-- 내용 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<label for=""> 
+								*<span class="blind">필수</span>내용
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<textarea name="" id="" rows="4" cols="50" class="col12"></textarea>
+						</div>
+					</div>
+					<!--// 내용 -->
+					
+					<!-- 첨부파일 -->
+					<div class="skinTb-tr">
+						<div class="skinTb-th col2">
+							<label for=""> 
+								*<span class="blind">필수</span>내용
+							</label>
+						</div>
+						<div class="skinTb-td">
+							<div class="ctrlFile skinMb-xsmall">
+								<input type="button"  value="파일 선택" class="ctrlFile-btnFile skinBtnBo skinBtnBo-data-pos"/>
+								<span class="ctrlFile-fileTxt">선택된 파일이 없음</span>
+								<input type="file" class="blind"/>
+								<input type="button"  value="파일 제거" class="ctrlFile-btnDel skinBtnDel"/>
+							</div>
+							
+							<div class="ctrlFile skinMb-xsmall">
+								<input type="button"  value="파일 선택" class="ctrlFile-btnFile skinBtnBo skinBtnBo-data-pos"/>
+								<span class="ctrlFile-fileTxt">선택된 파일이 없음</span>
+								<input type="file" class="blind"/>
+								<input type="button"  value="파일 제거" class="ctrlFile-btnDel skinBtnDel"/>
+							</div>				
+						</div>
+					</div>
+					<!--// 첨부파일 -->
+				</div>
+				<!--// 민원게시판 -->
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		includeLayout();
+	});
+
+	function includeLayout(){
+		var includeArea = $('[data-include]');
+		var self, url;
+		$.each(includeArea, function() {
+			self = $(this);
+			url = self.data("include");
+			self.load(url, function() {
+			self.removeAttr("data-include");
+			});
+		});
+	}
+</script>
+
+</html>

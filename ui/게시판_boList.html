@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>컨텐츠 타입별 템플릿</title>
+	<meta name="Keywords" content="정선군청 컨텐츠 타입별 템플릿" />
+	<meta name="Description" content="" />
+	<meta name="Author" content="" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" href="../common/css/fonts.css" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/css/common_style.css" />
+	<link rel="stylesheet" href="../common/css/print.css" media="print" />
+	<link rel="stylesheet" href="../common/css/jquery-ui.min.css" />
+
+	<script src="../common/js/jquery-1.12.2.min.js"></script>
+	<script src="../common/js/jquery.easing.1.3.min.js"></script>
+	<script src="../common/js/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../common/js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="../common/js/puble_common.js"></script>
+	<script src="../common/js/jquery.bxslider.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="../common/js/jquery.cookie.js"></script>
+	<script src="../common/js/date.js"></script>
+	<script src="../common/js/util.js"></script>
+	<script src="../common/js/utillity.js"></script>
+	<script src="../common/js/jquery-dateFormat.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/conts.css" />
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!-- page-wrap -->
+	<div class="page-wrap">
+		<!-- #Sub -->
+		<div id="Sub" >
+			<!-- contsArea -->
+			<div class="contsArea skinContainer">
+
+				<h4 class="titLv">게시판 리스트</h4>
+				<ul class="listLv4">
+					<li>게시판 전체 화면 확인</li>
+					<li>개발 적용시 전체 리스트 혹은 주석 참조</li>
+				</ul>
+
+				<!-- 사전정보공표 -->
+				<ul class="tabInfo">
+					<li class="active">
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								전체
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo2.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								일반공공행정
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo3.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								공공질서·안전
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo4.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								통신
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo5.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								산업중소기업
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo6.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								보건
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo7.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								사회복지
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo8.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								공공질서·안전
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo9.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								문화체육관광
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo10.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								수송·교통
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo11.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								농림해양수산
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo12.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								교육
+							</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="tabInfo-img">
+								<img src="../common/images/ico-tabinfo13.png" alt="" />
+							</span>
+							<span class="tabInfo-txt">
+								환경보호
+							</span>
+						</a>
+					</li>
+				</ul>
+				<!--// 사전정보공표 -->
+				
+				<!-- 기본게시판 -->
+				<div>
+					<table class="skinTb skinTb-data-resList skinTb-data-bgEven">
+						<caption class="blind">게시판 제목</caption>
+						<thead data-hidden="mob">
+							<tr>
+								<th scope="col" data-hidden="tablet">번호</th>
+								<th scope="col" class="skinTb-sbj" data-seq="first">제목</th>
+								<th scope="col">작성자</th>
+								<th scope="col" class="skinTb-date">등록일</th>
+								<th scope="col">첨부</th>
+								<th scope="col" data-hidden="tablet">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">제목입니다 제목입니다 제목입니다 
+										<img src="../common/images/ico-new.png" alt="" class="icoNew"/>
+										<img src="../common/images/ico-secret.png" alt="" class="icoSecret"/>
+										<img src="../common/images/ico-comment.png" alt="" class="icoComment"/>
+									</a>
+								</td>
+								<td class="skinTb-name skinTxa-center">홍길동</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td class="skinTxa-center" data-hidden="mob">
+									<div class="popLy">
+										<a href="#" class="popLy-btnMore">
+											<span class="blind">첨부파일 보기</span>
+										</a>
+										<div class="popLy-files">
+											<a href="#">길어지고 길어지는 첨부파일명.hwp</a> 
+											<a href="#">첨부파일명.jpg</a>
+											<a href="#">첨부파일명.ppt</a>
+											<a href="#">첨부파일명.pdf</a>
+										</div>
+									</div>
+								</td>
+								<td class="skinTxa-center" data-hidden="tablet">33</td>
+							</tr>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">2</td>
+								<td class="skinTb-sbj" data-seq="first"><a href="#">제목입니다.</a></td>
+								<td class="skinTb-name skinTxa-center">홍길동</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td data-hidden="mob">
+									
+								</td>
+								<td class="skinTxa-center" data-hidden="tablet">50</td>
+							</tr>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">3</td>
+								<td class="skinTb-sbj" data-seq="first"><a href="#">제목입니다.</a></td>
+								<td class="skinTb-name skinTxa-center">홍길동</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td class="skinTxa-center" data-hidden="mob">
+									<div class="popLy">
+										<a href="#" class="popLy-btnMore">
+											<span class="blind">첨부파일 보기</span>
+										</a>
+										<div class="popLy-files">
+											<a href="#">길어지고 길어지는 첨부파일명.hwp</a> 
+											<a href="#">첨부파일명.jpg</a>
+											<a href="#">첨부파일명.ppt</a>
+											<a href="#">첨부파일명.pdf</a>
+										</div>
+									</div>
+								</td>
+								<td class="skinTxa-center" data-hidden="tablet">100</td>
+							</tr>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">4</td>
+								<td class="skinTb-sbj" data-seq="first"><a href="#">제목입니다.</a></td>
+								<td class="skinTb-name skinTxa-center">홍길동</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td data-hidden="mob"> </td>
+								<td class="skinTxa-center" data-hidden="tablet">50</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!-- pager -->
+					<div class="pager">
+						<a href="?pageIndex=1" class="pager-link pager-link-data-first" onclick="linkPage(1);return false; ">10페이지 앞으로 이동</a> <a href="?pageIndex=1" class="pager-link pager-link-data-prev" onclick="linkPage(1);return false; ">1페이지 앞으로 이동</a> <span class="pager-num">1/361</span><a onclick="return false;" class="pager-link active">1</a> <a href="?pageIndex=2" class="pager-link" onclick="linkPage(2);return false; ">2</a> <a href="?pageIndex=3" class="pager-link" onclick="linkPage(3);return false; ">3</a> <a href="?pageIndex=4" class="pager-link pager-link-data-ellipsis" onclick="linkPage(4);return false; ">4</a> <a href="?pageIndex=5" class="pager-link pager-link-data-ellipsis" onclick="linkPage(5);return false; ">5</a> <a href="?pageIndex=6" class="pager-link pager-link-data-ellipsis" onclick="linkPage(6);return false; ">6</a> <a href="?pageIndex=7" class="pager-link pager-link-data-ellipsis" onclick="linkPage(7);return false; ">7</a> <a href="?pageIndex=8" class="pager-link pager-link-data-ellipsis" onclick="linkPage(8);return false; ">8</a> <a href="?pageIndex=9" class="pager-link pager-link-data-ellipsis" onclick="linkPage(9);return false; ">9</a> <a href="?pageIndex=10" class="pager-link" onclick="linkPage(10);return false; ">10</a> <a href="?pageIndex=2" onclick="linkPage(2);return false; " class="pager-link pager-link-data-next">1페이지 뒤로 이동</a> <a href="?pageIndex=11" onclick="linkPage(11);return false; " class="pager-link pager-link-data-last">10페이지 뒤로 이동</a> 
+					</div>
+					<!--// pager -->
+
+					<!-- 버튼 -->
+					<div class="skinBtnBo_box skinTxa-right">
+						<a href="#" class="skinBtnBo skinBtnBo-data-pos">글쓰기</a>
+					</div>
+					<!--// 버튼 -->
+				</div>
+				<!--// 기본게시판 -->
+
+				<!-- 민원게시판 -->
+				<div>
+					<table class="skinTb skinTb-data-resList skinTb-data-bgEven">
+						<caption class="blind">게시판 제목</caption>
+						<thead data-hidden="mob">
+							<tr>
+								<th scope="col" data-hidden="tablet">번호</th>
+								<th scope="col" class="skinTb-sbj" data-seq="first">제목</th>
+								<th scope="col">작성자</th>
+								<th scope="col" class="skinTb-date">등록일</th>
+								<th scope="col" class="skinTb-date">처리현황</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">제목입니다 제목입니다 제목입니다 제목입니다제목입니다 제목입니다 제목입니다제목입니다s
+										<img src="../common/images/ico-new.png" alt="" class="icoNew"/>
+										<img src="../common/images/ico-secret.png" alt="" class="icoSecret"/>
+										<img src="../common/images/ico-comment.png" alt="" class="icoComment"/>
+									</a>
+								</td>
+								<td class="skinTb-name skinTxa-center">관라자</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td class="skinTxa-center">
+									접수대기
+								</td>
+							</tr>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">제목입니다 제목입니다 제목입니다 제목입니다제목입니다 제목입니다 제목입니다제목입니다s
+										<img src="../common/images/ico-new.png" alt="" class="icoNew"/>
+										<img src="../common/images/ico-secret.png" alt="" class="icoSecret"/>
+										<img src="../common/images/ico-comment.png" alt="" class="icoComment"/>
+									</a>
+								</td>
+								<td class="skinTb-name skinTxa-center">관라자</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td class="skinTxa-center">
+									접수대기
+								</td>
+							</tr>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">제목입니다 제목입니다 제목입니다 제목입니다제목입니다 제목입니다 제목입니다제목입니다s
+										<img src="../common/images/ico-new.png" alt="" class="icoNew"/>
+										<img src="../common/images/ico-secret.png" alt="" class="icoSecret"/>
+										<img src="../common/images/ico-comment.png" alt="" class="icoComment"/>
+									</a>
+								</td>
+								<td class="skinTb-name skinTxa-center">관라자</td>
+								<td class="skinTb-date skinTxa-center">2010-11-24</td>
+								<td class="skinTxa-center">
+									접수대기
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// 민원게시판 -->
+
+				<!-- 민원사무편람게시판 -->
+				<div>
+					<table class="skinTb skinTb-data-resList skinTb-data-basic skinTb-data-bgEven skinTxa-center">
+						<caption class="blind">게시판 제목</caption>
+						<thead data-hidden="mob">
+							<tr>
+								<th scope="col" data-hidden="tablet">번호</th>
+								<th scope="col" class="skinTb-sbj" data-seq="first">사무명</th>
+								<th scope="col">담당부서</th>
+								<th scope="col">전화번호</th>
+								<th scope="col">민원서식</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td class="skinTxa-center" data-hidden="tablet mob">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">사무명이 표시됩니다.	</a>
+								</td>
+								<td>자치행정과</td>
+								<td>033-560-2221</td>
+								<td> <a href="#" target="_blank" title="새 창 이동"><img src="../common/images/ico-newwindow.png" alt="" /></a>	</td>
+							</tr>
+							
+							<tr>
+								<td data-hidden="tablet mob">1</td>
+								<td class="skinTb-sbj" data-seq="first">
+									<a href="#">사무명이 표시됩니다.	</a>
+								</td>
+								<td>자치행정과</td>
+								<td>033-560-2221</td>
+								<td> <a href="#" target="_blank" title="새 창 이동"><img src="../common/images/ico-newwindow.png" alt="" /></a>	</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<!--// 민원사무편람게시판 -->
+
+				<!-- 사전정보공표 -->
+				<div>
+					<table class="skinTb skinTb-data-resList skinTb-data-bgEven skinTb-data-basic skinTxa-center">
+						<caption class="blind">테이블 제목</caption>
+						<thead data-hidden="mob">
+							<tr>
+								<th scope="col">분야</th>
+								<th scope="col">공표목록</th>
+								<th scope="col">공표주기</th>
+								<th scope="col" data-hidden="tablet">공표시기</th>
+								<th scope="col" data-hidden="tablet">방법</th>
+								<th scope="col">담당부서</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skinTb-sbj">
+									기획재정
+								</td>
+								<td>
+									<span class="skinTb-hidden">공표주기</span>
+									<a href="#">
+										지방공기업 예산
+									</a>
+								</td>
+								<td>
+									<span class="skinTb-hidden">공표주기</span>
+									매년
+								</td>
+								<td data-hidden="tablet" >
+									연초
+								</td>
+								<td data-hidden="tablet">
+									홈페이지
+								</td>
+								<td>
+									<span class="skinTb-hidden">담당부서</span>
+									기획감사실
+								</td>
+							</tr>
+							
+							<tr>
+								<td class="skinTb-sbj">
+									기획재정
+								</td>
+								<td>
+									<span class="skinTb-hidden">공표주기</span>
+									<a href="#">
+										지방공기업 예산
+									</a>
+								</td>
+								<td>
+									<span class="skinTb-hidden">공표주기</span>
+									매년
+								</td>
+								<td data-hidden="tablet" >
+									연초
+								</td>
+								<td data-hidden="tablet">
+									홈페이지
+								</td>
+								<td>
+									<span class="skinTb-hidden">담당부서</span>
+									기획감사실
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// 사전정보공표 -->
+
+				<!-- 겔러리게시판 -->
+				<ul class="boGallery photo">
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="cmpe-link" onclick="goPage(this.href); return false;">
+							<div class="boGallery-img">	
+								<div class="thumbnail"> 
+									<div class="centered">
+										<img src="http://www.jeongseon.go.kr/servlet/Thumbnail?i=/upload/board/BDBBCC10/board_BDBBCC10_20190311_6.jpg&w=456&h=304" alt="2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연">
+									</div> 
+								</div> 
+							</div>
+							<div class="boGallery-sbj">
+								2018평창동계패럴림픽 1주년 '평화를 노래하다' 특별공연
+							</div>
+							<time data-hidden="tablet mob">2019-03-09</time>
+						</a>
+					</li>
+				</ul>
+				<!--// 겔러리게시판 -->
+
+				<!-- pager -->
+				<div class="pager">
+					<a href="?pageIndex=1" class="pager-link pager-link-data-first" onclick="linkPage(1);return false; ">10페이지 앞으로 이동</a> <a href="?pageIndex=1" class="pager-link pager-link-data-prev" onclick="linkPage(1);return false; ">1페이지 앞으로 이동</a> <span class="pager-num">1/361</span><a onclick="return false;" class="pager-link active">1</a> <a href="?pageIndex=2" class="pager-link" onclick="linkPage(2);return false; ">2</a> <a href="?pageIndex=3" class="pager-link" onclick="linkPage(3);return false; ">3</a> <a href="?pageIndex=4" class="pager-link pager-link-data-ellipsis" onclick="linkPage(4);return false; ">4</a> <a href="?pageIndex=5" class="pager-link pager-link-data-ellipsis" onclick="linkPage(5);return false; ">5</a> <a href="?pageIndex=6" class="pager-link pager-link-data-ellipsis" onclick="linkPage(6);return false; ">6</a> <a href="?pageIndex=7" class="pager-link pager-link-data-ellipsis" onclick="linkPage(7);return false; ">7</a> <a href="?pageIndex=8" class="pager-link pager-link-data-ellipsis" onclick="linkPage(8);return false; ">8</a> <a href="?pageIndex=9" class="pager-link pager-link-data-ellipsis" onclick="linkPage(9);return false; ">9</a> <a href="?pageIndex=10" class="pager-link" onclick="linkPage(10);return false; ">10</a> <a href="?pageIndex=2" onclick="linkPage(2);return false; " class="pager-link pager-link-data-next">1페이지 뒤로 이동</a> <a href="?pageIndex=11" onclick="linkPage(11);return false; " class="pager-link pager-link-data-last">10페이지 뒤로 이동</a> 
+				</div>
+				<!--// pager -->
+
+				<!-- 버튼 -->
+				<div class="skinBtnBo_box skinTxa-right">
+					<a href="#" class="skinBtnBo skinBtnBo-data-pos">글쓰기</a>
+				</div>
+				<!--// 버튼 -->
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		includeLayout();
+	});
+
+	function includeLayout(){
+		var includeArea = $('[data-include]');
+		var self, url;
+		$.each(includeArea, function() {
+			self = $(this);
+			url = self.data("include");
+			self.load(url, function() {
+			self.removeAttr("data-include");
+			});
+		});
+	}
+</script>
+
+</html>

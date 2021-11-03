@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>강원도 반려동물 동반관광 API 시스템 메인</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="Author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <link rel="stylesheet" href="/page/common/css/fonts.css" />
+    <link rel="stylesheet" href="/page/common/css/common.css" />
+    <link rel="stylesheet" href="/page/common/css/common_style.css" />
+    <link rel="stylesheet" href="/page/common/css/print.css" media="print" />
+    <link rel="stylesheet" href="/page/common/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/page/common/css/tour.css" />
+    <link rel="stylesheet" href="/page/common/css/daummap.css" />
+    <link rel="stylesheet" href="/page/common/css/swiper.min.css" />
+
+    <script src="/page/common/js/jquery-1.12.2.min.js"></script>
+    <script src="/page/common/js/jquery.easing.1.3.min.js"></script>
+    <script src="/page/common/js/jquery-ui.min.js"></script>
+    <!--[if lt IE 9]>
+<script src="/page/common/js/html5shiv.js"></script>
+<![endif]-->
+    <script src="/page/common/js/puble_common.js"></script>
+    <script src="/page/common/js/slick.min.js"></script>
+    <script src="/page/common/js/common.js"></script>
+    <script src="/page/common/js/jquery.cookie.js"></script>
+    <script src="/page/common/js/date.js"></script>
+    <script src="/page/common/js/util.js"></script>
+    <script src="/page/common/js/utillity.js"></script>
+    <script src="/page/common/js/jquery-dateFormat.min.js"></script>
+    <script src="/page/common/js/tour.js"></script>
+    <script src="/page/common/js/foto.min.js"></script>
+    <script src="/page/common/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="/page/portal/css/style.css" />
+    <link rel="stylesheet" href="/page/portal/css/main.css" />
+
+    <script src="/page/portal/js/script.js"></script>
+    <script src="/page/portal/js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- 본문 바로가기 -->
+    <ul class="skipnav">
+        <li><a href="#A-Gnb-focus">주메뉴 바로가기</a></li>
+        <li><a href="#A-Contents-focus">본문 바로가기</a></li>
+        <li><a href="#A-Ftr-focus">푸터 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">
+                                <span class="blind">GWTO 강원도 반려동물 동반관광 API 시스템</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- //logo -->
+                    <a href="#A-Gnb-focus" id="A-Gnb-focus" class="blind">주메뉴 시작</a>
+                    <nav>
+                        <ul class="depth1 clearfix">
+                            <li>
+                                <h2>
+                                    <a href="#">
+                                        서비스소개
+                                    </a>
+                                </h2>
+                                <ul class="depth2">
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                서비스 안내
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                공지사항
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                문의하기
+                                            </a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <!-- //depth2 -->
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">
+                                        통합검색
+                                    </a>
+                                </h2>
+                                <ul class="depth2">
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                숙박지
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                식음료
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                관광지
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                체험
+                                            </a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">
+                                                동물병원
+                                            </a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <!-- //depth2 -->
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">
+                                        데이터지도보기
+                                    </a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">
+                                        OpenAPI
+                                    </a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">
+                                        댕댕여지도
+                                    </a>
+                                </h2>
+                            </li>
+                        </ul>
+                        <!-- //depth1 -->
+
+                    </nav>
+                    <!-- //nav -->
+
+                    <ul class="link clearfix">
+                        <li>
+                            <a href="#">
+                                API활용
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                강원공공데이터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                강원관광재단
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //link -->
+
+                    <div class="btn_sitemap_box">
+                        <button class="btn_sitemap"><span class="blind">사이트맵열기</span></button>
+                    </div>
+                    <!-- //sitemap_box -->
+
+                    <div id="sitemap">
+                        <div class="sitemap_logo">
+                            <h1>
+                                <a href="#">
+                                    <span class="blind">GWTO 강원도 반려동물 동반관광 API 시스템</span>
+                                </a>
+                            </h1>
+                        </div>
+                        <!-- //sitemap_logo -->
+                        <ul class="sitemap_depth1 clearfix">
+                            <li>
+                                <h2>
+                                    <a href="#">서비스 소개</a>
+                                </h2>
+                                <ul class="sitemap_depth2">
+                                    <li>
+                                        <h3>
+                                            <a href="#">서비스 안내</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">공지사항</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">문의하기</a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <!-- //sitemap_depth2 -->
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">지원사업</a>
+                                </h2>
+                                <ul class="sitemap_depth2">
+                                    <li>
+                                        <h3>
+                                            <a href="#">숙박지</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">식음료</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">관광지</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">체험</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#">동물병원</a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                                <!-- //sitemap_depth2 -->
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">경영공시</a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">재단소식</a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    <a href="#">강원광역새일센터</a>
+                                </h2>
+                            </li>
+                        </ul>
+                        <!-- //sitemap_depth1 -->
+
+                        <button class="sitemap_close"><span class="blind">사이트맵닫기</span></button>
+
+                    </div>
+                    <!-- //sitemap -->
+
+                </div>
+                <!-- //header -->
+
+            </div>
+            <!-- //container -->
+
+            <div class="sitemap_bg"></div>
+            <!-- //sitemap_bg -->
+
+        </header>
+        <!-- //header -->
+
+        <main id="main">
+            <a href="#A-Contents-focus" id="A-Contents-focus" class="blind">본문 시작</a>
+            <section id="section1">
+                <div class="visual">
+                    <div class="text_box">
+                        <div class="container">
+                            <div class="text">
+                                <h2>
+                                    <span>강원도에서 반려동물과 함께</span>
+                                    <span>동반관광정보를 찾아보세요!</span>
+                                </h2>
+                            </div>
+                            <!-- //text -->
+
+                            <div class="text">
+                                <h2>
+                                    <span>강원도에서 반려동물과 함께</span>
+                                    <span>동반관광정보를 찾아보세요!</span>
+                                </h2>
+                            </div>
+                            <!-- //text -->
+
+                            <div class="text">
+                                <h2>
+                                    <span>강원도에서 반려동물과 함께</span>
+                                    <span>동반관광정보를 찾아보세요!</span>
+                                </h2>
+                            </div>
+                            <!-- //text -->
+
+                        </div>
+                        <!-- //container -->
+
+                    </div>
+                    <!-- //text_box -->
+
+                    <div class="search_wrap">
+                        <div class="container">
+                            <div class="search_box clearfix">
+                                <div class="select_box">
+                                    <a href="#">전체분야</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">숙박지</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">식음료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">관광지</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">체험</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">동물병원</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //select_box -->
+
+                                <div class="select_box">
+                                    <a href="#">전체분야</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">춘천</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">강릉</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">태백</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">삼척</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">횡성</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">평창</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">철원</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">양구</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">고성</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">원주</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">동해</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">속초</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">홍천</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">영월</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">정선</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">화천</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">인제</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">양양</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //select_box -->
+
+                                <div class="search">
+                                    <input id="search" type="text" placeholder="검색어를 입력해보세요!">
+                                    <label for="search"><span class="blind">검색어</span></label>
+                                    <button type="button"><span class="blind">검색</span></button>
+                                </div>
+                                <!-- //search -->
+
+                            </div>
+                            <!-- //search_box -->
+
+                        </div>
+                        <!-- //container -->
+
+                    </div>
+                    <!-- //search_wrap -->
+
+                    <div class="reading_glasses_wrap">
+                        <div class="container">
+                            <div class="reading_glasses_box">
+                                <div class="box1 swiper-container">
+                                    <div class="slick swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/page/portal/images/main/main_view_01.jpg" alt="">
+                                        </div>
+                                        <!-- //swiper-slide -->
+
+                                        <div class="swiper-slide">
+                                            <img src="/page/portal/images/main/main_view_02.jpg" alt="" class="swiper-slide">
+                                        </div>
+                                        <!-- //swiper-slide -->
+
+                                        <div class="swiper-slide">
+                                            <img src="/page/portal/images/main/main_view_03.jpg" alt="" class="swiper-slide">
+                                        </div>
+                                        <!-- //swiper-slide -->
+
+                                    </div>
+                                    <!-- //swiper-wrapper -->
+
+                                </div>
+                                <!-- //swiper-container -->
+
+                            </div>
+                            <!-- //reading_glasses_box -->
+
+                            <div class="control_box">
+                                <div class="swiper-pagination"></div>
+                                <div class="control">
+                                    <button class="pause"><span class="blind">정지</span></button>
+                                    <button class="play"><span class="blind">재생</span></button>
+                                </div>
+                                <!-- //control -->
+
+                            </div>
+                            <!-- //control_box -->
+
+                        </div>
+                        <!-- //container -->
+
+                    </div>
+                    <!-- //reading_glasses_wrap -->
+
+                </div>
+                <!-- //visual -->
+
+            </section>
+            <!-- //section1-->
+
+            <section id="section2">
+                <div class="container">
+                    <div class="section2">
+                        <div class="notice clearfix">
+                            <h2>
+                                공지사항
+                            </h2>
+                            <div class="slick_wrap">
+                                <div class="slick">
+                                    <a href="#" class="slide">
+                                        <p>강원댕댕여지도 홈페이지 오픈 이벤트</p>
+                                        <span calss="date">
+                                            2021 - 09 - 02
+                                        </span>
+                                    </a>
+                                    <!-- //slide -->
+
+                                    <a href="#" class="slide">
+                                        <p>강원댕댕여지도 홈페이지 오픈 이벤트</p>
+                                        <span calss="date">
+                                            2021 - 09 - 02
+                                        </span>
+                                    </a>
+                                    <!-- //slide -->
+
+                                </div>
+                                <!-- //slick -->
+
+                                <div class="control">
+                                    <button class="prev"><span class="blind">이전버튼</span></button>
+                                    <button class="pause"><span class="blind">일시정지</span></button>
+                                    <button class="play"><span class="blind">재생</span></button>
+                                    <button class="next"><span class="blind">다음버튼</span></button>
+                                </div>
+                                <!-- //control -->
+
+                            </div>
+                            <!-- //slick_wrap -->
+
+                            <a href="#" class="more">더보기</a>
+
+                        </div>
+                        <!-- //notice-->
+
+                    </div>
+                    <!-- //section2 -->
+
+                </div>
+                <!-- //container -->
+
+            </section>
+            <!-- //section2 -->
+
+            <section id="section3">
+                <div class="container">
+                    <div class="section3 clearfix">
+                        <div class="left">
+                            <h3>
+                                강원도 반려동물<br>
+                                동반관광 DB 분포
+                            </h3>
+                            <div class="tab1 clearfix">
+                                <a href="#" class="icon1 active">
+                                    <span>종류별</span>
+                                </a>
+                                <a href="#" class="icon2 ">
+                                    <span>지역별</span>
+                                </a>
+                            </div>
+                            <!-- //tab1 -->
+
+                        </div>
+                        <!-- //left -->
+
+                        <div class="right_box">
+                            <div class="right clearfix">
+                                <div class="tab2_box">
+                                    <ul class="tab2 clearfix">
+                                        <li>
+                                            <a href="#" class="active">
+                                                춘천
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                원주
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강릉
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                동해
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                태백
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- //tab2 -->
+
+                                </div>
+                                <!-- //tab2_box -->
+
+
+
+                                <!--
+                                <div class="circle">
+                                    <img src="/page/portal/images/main/circle.jpg" alt="">
+                                </div>
+
+
+                                <ul class="list">
+                                    <li class="lodgment">
+                                        <span>숙박지</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="beverage">
+                                        <span>식음료</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="tourist_destination">
+                                        <span>관광지</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="experience">
+                                        <span>체험</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="animal_hospital">
+                                        <span>동물병원</span>
+                                        <em>25개</em>
+                                    </li>
+                                </ul>
+                                -->
+
+                            </div>
+                            <!-- //right -->
+
+                            <div class="right clearfix">
+                                <div class="tab2_box">
+                                    <ul class="tab2 clearfix">
+                                        <li>
+                                            <a href="#" class="active">
+                                                춘천222
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                원주222
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강릉222
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                동해
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                태백
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                속초
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                삼척
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                홍천
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                횡성
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                영월
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                평창
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                정선
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                철원
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                화천
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                양구
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                인제
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고성
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                양양
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- //tab2 -->
+
+                                </div>
+                                <!-- //tab2_box -->
+
+                                <div class="circle">
+                                    <img src="/page/portal/images/main/circle.jpg" alt="">
+                                </div>
+                                <!-- //circle -->
+
+                                <ul class="list">
+                                    <li class="lodgment">
+                                        <span>숙박지</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="beverage">
+                                        <span>식음료</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="tourist_destination">
+                                        <span>관광지</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="experience">
+                                        <span>체험</span>
+                                        <em>25개</em>
+                                    </li>
+                                    <li class="animal_hospital">
+                                        <span>동물병원</span>
+                                        <em>25개</em>
+                                    </li>
+                                </ul>
+                                <!-- //list -->
+
+                            </div>
+                            <!-- //right -->
+
+                        </div>
+                        <!-- //right_box -->
+
+                    </div>
+                    <!-- //section3 -->
+
+                </div>
+                <!-- //container -->
+
+            </section>
+            <!-- //section3 -->
+
+            <section id="section4">
+                <div class="container">
+                    <div class="section4">
+                        <ul class="list clearfix">
+                            <li>
+                                <a href="#" class="lodgment">
+                                    <span>숙박지</span>
+                                    <p>
+                                        <strong>100</strong><em>건</em>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="beverage">
+                                    <span>식음료</span>
+                                    <p>
+                                        <strong>100</strong><em>건</em>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tourist_destination">
+                                    <span>관광지</span>
+                                    <p>
+                                        <strong>100</strong><em>건</em>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="experience">
+                                    <span>체험</span>
+                                    <p>
+                                        <strong>100</strong><em>건</em>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="animal_hospital">
+                                    <span>동물병원</span>
+                                    <p>
+                                        <strong>100</strong><em>건</em>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //list -->
+
+                    </div>
+                    <!-- //section4 -->
+
+                </div>
+                <!-- //container -->
+
+            </section>
+            <!-- //section4 -->
+
+            <section id="section5">
+                <div class="container">
+                    <div class="section5 clearfix">
+                        <div class="text">
+                            <h3>
+                                서비스 안내
+                            </h3>
+                            <p>
+                                강원도 반려동물 동반관광 Open API 시스템은<br>
+                                강원도내 반려동물 동반가능 여행지에 대한<br>
+                                숙박, 식음료,관광지 등 주요정보를 제공하는<br>
+                                공유서비스입니다.
+                            </p>
+                            <a href="#" class="more">
+                                더보기
+                            </a>
+                        </div>
+                        <!-- //text -->
+
+                        <div class="img_box">
+                            <ul class="img slick clearfix">
+                                <li>
+                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                </li>
+                            </ul>
+                            <!-- //img -->
+
+                            <div class="control">
+                                <button class="next"><span class="blind">다음버튼</span></button>
+                            </div>
+                            <!-- //control -->
+
+                        </div>
+                        <!-- //img_box -->
+
+                    </div>
+                    <!-- //section5 -->
+
+                </div>
+                <!-- //container -->
+
+            </section>
+            <!-- //section5 -->
+
+        </main>
+        <!-- //main -->
+
+        <footer id="footer">
+            <a href="#A-Ftr-focus" id="A-Ftr-focus" class="blind">푸터 시작</a>
+            <div class="container">
+                <div class="footer clearfix">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">
+                                <span class="blind">GWTO 강원도관광재단 Gangwon Tourism Organization</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- //logo -->
+
+                    <div class="link">
+                        <a href="#">관련 사이트</a>
+                        <ul>
+                            <li>
+                                <a href="#">사이트</a>
+                            </li>
+                            <li>
+                                <a href="#">사이트</a>
+                            </li>
+                            <li>
+                                <a href="#">사이트</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //link -->
+
+                    <div class="box">
+                        <p>
+                            <span>대표전화</span>
+                            <strong>033-269-8900</strong>
+                        </p>
+                        <address>
+                            강원도 춘천시 안마산로 89 세종빌딩 3층 (24455)<br>
+                            ⓒ GWTO. All Rights Reserved
+                        </address>
+                    </div>
+                    <!-- //box -->
+
+                </div>
+                <!-- //footer -->
+
+            </div>
+            <!-- //container -->
+
+        </footer>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>산출물 리스트</title>
+<script src="../common/js/jquery-1.12.2.min.js"></script>
+<style type="text/css">
+html, body {padding:0; margin:0;}
+#indexWrap {max-width:100%;min-width:960px;height:auto;padding:20px;box-sizing:border-box}
+
+.titleText {font-size:18px;font-weight:700;margin:0;padding:0;line-height:1.5}
+.titleText+.ContentsTable {margin-top:10px}
+.ContentsTable {width:100%;max-width:600px;border-spacing:0;border-collapse:collapse;table-layout:fixed}
+.ContentsTable th,
+.ContentsTable td {height:30px;padding:0 10px;border:1px solid #666;font-weight:700;font-size:13px;text-align:center;background-color:#fff}
+.ContentsTable tbody th{text-align:left}
+.ContentsTable th:first-child,
+.ContentsTable td:first-child {border-left:0}
+.ContentsTable th:last-child,
+.ContentsTable td:last-child {border-right:0}
+.ContentsTable a {color:#000}
+.ContentsTable tbody tr:hover td,
+.ContentsTable tbody tr:hover th {background-color:#fdd}
+.ContentsTable tbody tr.on td,
+.ContentsTable tbody tr.on th{background-color:#fdd}
+</style>
+<script type="text/javascript">
+var Preview = {
+	init: function() {
+		$("body").append("<iframe id=\"preview\" src=\"about:blank\" width=\"377\" height=\"720\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\"></iframe>");
+		$("#preview").css({
+			"display": "none",
+			"width": "1280",
+			"height": "800",
+			"position": "fixed",
+			"bottom": "15px",
+			"right": "15px",
+			"border": "1px solid #000",
+			"transform": "scale(0.5)",
+			"transform-origin": "100% 100%"
+		});
+	},
+	handling: function() {
+		$("a[target=\"_blank\"]").hover(function() {
+			var url = $(this).attr("href");
+			$("#preview").attr("src", url).show();
+		}, function() {
+			$("#preview").attr("src", "").hide();
+		});
+	},
+	execute: function() {
+		Preview.init();
+		Preview.handling();
+	}
+}
+$(document).ready(function() {
+	Preview.execute();
+});
+
+</script>
+</head>
+<body>
+<div id="indexWrap">
+	<h1 class="titleText">표준화 파일 목록</h1>
+	<table class="ContentsTable">
+		<thead>
+			<tr>
+				<th scope="col">내용</th>
+				<th scope="col">경로 및 파일명</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">공통-ui</th>
+				<td scope="row">
+					<a href="공통-ui.html"  target="_blank">공통-ui.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">게시판 검색</th>
+				<td scope="row">
+					<a href="게시판_bosearch.html"  target="_blank">게시판_bosearch.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">게시판 목록</th>
+				<td scope="row">
+					<a href="게시판_boList.html"  target="_blank">게시판_boList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">게시판 상세</th>
+				<td scope="row">
+					<a href="게시판_boView.html"  target="_blank">게시판_boView.html</a>
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">게시판 쓰기</th>
+				<td scope="row">
+					<a href="게시판_boWrite.html"  target="_blank">게시판_boWrite.html</a>
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">갤러리_galleryView.html</th>
+				<td scope="row">
+					<a href="갤러리_galleryView.html"  target="_blank">갤러리_galleryView.html</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<th scope="row">사이트맵_sitemap.html</th>
+				<td scope="row">
+					<a href="사이트맵_sitemap.html"  target="_blank">사이트맵_sitemap.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">개인정보인증.html</th>
+				<td scope="row">
+					<a href="개인정보인증.html"  target="_blank">개인정보인증.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">경고창_boList.html</th>
+				<td scope="row">
+					<a href="경고창_boList.html"  target="_blank">경고창_boList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">로그인_boList.html</th>
+				<td scope="row">
+					<a href="로그인_boList.html"  target="_blank">로그인_boList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">설문조사_researchList.html</th>
+				<td scope="row">
+					<a href="설문조사_researchList.html"  target="_blank">설문조사_researchList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">설문조사_researchView.html</th>
+				<td scope="row">
+					<a href="설문조사_researchView.html"  target="_blank">설문조사_researchView.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">설문조사_researWrite.html</th>
+				<td scope="row">
+					<a href="설문조사_researWrite.html"  target="_blank">설문조사_researWrite.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">소식지_galleryList.html</th>
+				<td scope="row">
+					<a href="소식지_galleryList.html"  target="_blank">소식지_galleryList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">역대군수_profile.html</th>
+				<td scope="row">
+					<a href="역대군수_profile.html"  target="_blank">역대군수_profile.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">인구증감현황_boList.html</th>
+				<td scope="row">
+					<a href="인구증감현황_boList.html"  target="_blank">인구증감현황_boList.html</a>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">통합검색_boSrchTotal.html</th>
+				<td scope="row">
+					<a href="통합검색_boSrchTotal.html"  target="_blank">통합검색_boSrchTotal.html</a>
+				</td>
+			</tr>
+
+
+			
+			
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
