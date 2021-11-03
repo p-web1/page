@@ -229,6 +229,8 @@ main{overflow: hidden;}
 
 
 
+
+
 #section3 .right ul.tab2{float: left; /*margin-right: 50px;*/ width: 210px;}
 #section3 .right ul.tab2 li{float: left; width: 47.62%; margin: 0 10px 10px 0;}
 #section3 .right ul.tab2 li:nth-child(2n){margin-right: 0;}
