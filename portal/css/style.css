@@ -36,10 +36,10 @@ input, select, textarea{font-family:'S-CoreDream', sans-serif; font-size:16px; c
 }
 
 /* header */
-#header{padding: 64px 0 0; position: absolute; top:0; left:0; right:0; z-index: 99;}
+#header{padding: 67px 0 0; position: absolute; top:0; left:0; right:0; z-index: 99;}
 #header .header{position: relative;}
 #header .logo{float: left;}
-#header .logo h1 a{display: block; margin: 3px 0 0; width: 248px; height: 32px; background: url(../images/common/sp_new.png)no-repeat -356px -24px; background-size: 960px 480px;}
+#header .logo h1 a{display: block; width: 248px; height: 32px; background: url(../images/common/sp_new.png)no-repeat -356px -24px; background-size: 960px 480px;}
 #header nav{float: left; /*width: 722px;*/ width: calc(100% - 678px);}
 #header nav ul.depth1 > li{position: relative; float: left; /*width: calc(100% - 577.6px);*/ width: 20%;}
 #header nav ul.depth1 li h2{}
