@@ -12,9 +12,9 @@ function p_mouseRelative(e,chkClNm,act){
 		chk = 0;
 	}else{
 		clMatch:
-		while(e != null){ 
-			if((e.className !='') && (e.className != undefined)){  
-				var classes = e.className.split(' ');		
+		while(e != null){
+			if((e.className !='') && (e.className != undefined)){
+				var classes = e.className.split(' ');
 				for(idx in classes){
 					if(classes[idx] == chkClNm){
 						chk = 1;
@@ -43,7 +43,7 @@ function p_stopDefault(e){
 	}
 }
 /* url 체크 */
-function p_chkURL(name){ 
+function p_chkURL(name){
 	var lo = location.href;
 	var loArray = lo.split('/');
 	var chkPage = false;
@@ -62,7 +62,7 @@ function p_setStyle(obj,s){
 			for(var i in s){
 				obj[e].style[i] = s[i];
 			}
-		} 
+		}
 	}else{
 		for(var i in s){
 			obj.style[i] = s[i];
@@ -95,7 +95,7 @@ function p_class(name,type,elem){
 	var r = [];
 	// 클래스 이름을 찾는다. (복수개의 이름도 허용)
 	var re = new RegExp("(^|\\s)" + name + "(\\s|$)");
-	
+
 	// 특정 타입만 검색하도록 범위를 좁히거나, 아니면 전체 엘리먼트를 살펴본다.
 	var e = (elem || document).getElementsByTagName(type || "*");
 	for (var j = 0; j< e.length; j++){
@@ -130,13 +130,13 @@ function p_stopDefault(e){
 
 // 컨트롤 헤더
 function p_ctrlHdr(){
-	
-	var	objSrch = { 
+
+	var	objSrch = {
 			$srchHdrTotal : $('.srchHdrTotal'),
 			$btnSrchOpen : $('.btnOpenSrchHdrTotal'),
 			$btnSrchClose : $('.btnCloseSrchHdrTotal')
 	}
-	
+
 	var objGnb = {
 			$topBannBtnOpenGroup : $('.topBann-btnOpenGroup'),
 			$topBannInner : $('.topBann-inner'),
@@ -199,16 +199,16 @@ function p_ctrlHdr(){
 			});
 		}
 	}
-	
-	// 검색창 토글 
+
+	// 검색창 토글
 	function p_toggleSrch(){
 		if(objSrch.$srchHdrTotal.length == 0){
 			return false;
 		}
-		
+
 		var evtElems = [objSrch.$btnSrchOpen,objSrch.$btnSrchClose];
 		var chkEvt;
-		
+
 		if(window.innerWidth < 1000){
 			objSrch.$srchHdrTotal.attr('data-hidden','true');
 		}
@@ -240,16 +240,16 @@ function p_ctrlHdr(){
 			}
 		});
 	}
-	
-	
+
+
 	p_toggleSrch();
-	
+
 }
 
-/* 페이지탭 높이 자동화 
+/* 페이지탭 높이 자동화 */
 function p_pageTabAutoHeight(){
 	var arrT = p_class('pageTab','ul');
-	if(!Boolean(arrT)){return;} 
+	if(!Boolean(arrT)){return;}
 	var setMb = 20;  // 높이 옵션
 	// 탭 높이 보내기 함수
 	function p_setH(n){
@@ -266,15 +266,15 @@ function p_pageTabAutoHeight(){
 				arrEl.forEach(function(el,idx,list){
 					el.style.height = h+'px'; // 최종 높이값을 대입
 				});
-				
+
 				// 총 높이
-				getTH += h;  
-				
+				getTH += h;
+
 				// 배열 초기화
-				arrEl.splice(0,arrEl.length); 
-				
+				arrEl.splice(0,arrEl.length);
+
 				// 높이 초기화
-				h = 0; 
+				h = 0;
 			}
 			// 서브탭을 찾는다.
 			var chkS = p_class('pageTab-sub','ul',this.children[i])[0];
@@ -290,7 +290,7 @@ function p_pageTabAutoHeight(){
 		}else{
 			this.style.height = getTH + 'px';
 		}
-		
+
 	}
 	// 초기화 함수 정의
 	function p_resetH(){
@@ -319,17 +319,16 @@ function p_pageTabAutoHeight(){
 		}
 		for(var i= 0; i < arrT.length; i++){
 			// 첫번째 탭 그룹의 높이 구함.
-			p_setH.call(arrT[i],n); 
+			p_setH.call(arrT[i],n);
 		}
 	}
 	// 초기 실행
-	p_ctrlHeight(); 
+	p_ctrlHeight();
 	// 리사이즈일 때 실행
 	$(window).resize(function(){
 		p_ctrlHeight();
 	});
 }
-*/
 
 function p_customDaumMapApi(m){
 	if($('.root_daum_roughmap').length == 0){
@@ -347,7 +346,7 @@ function p_customDaumMapApi(m){
 			if(!mapInfo[x][5]){
 				break;
 			}
-		}	
+		}
 	}
 }
 
@@ -384,9 +383,9 @@ function p_placehold(){
 	t.onfocusout = function(){
 		if(this.value == null || this.value == ''){
 			t.value = title;
-		} 
+		}
 	}
-} 
+}
 
 
 
@@ -446,7 +445,7 @@ function p_sldr(opts){
 			opts.reload(objSlider);
 		});
 	}
-	
+
 	if(opts.seBtnPrev){
 		$T.find(opts.seBtnPrev).click(function(){
 			if($(this).data().notUse){
@@ -495,12 +494,12 @@ function p_popLayer(opts){
 	if($obj.length == 0){return;}
 	var chkClNm = opts.seTarget.replace('.','');
     // 핸들러 이벤트가 있다면
-	
+
 	if(opts.seBtnOpen){
-		
+
 		$obj.find(opts.seBtnOpen).on(opts.events,function(e){
 			if(e.type =='mouseover' || e.type =='focusin' || e.type =='click'){
-				var $this = $(this); 
+				var $this = $(this);
 				$this.parents(opts.seTarget).find(opts.seLayer).show();
 				var layerW = $this.parents(opts.seTarget).find(opts.seLayer).width();
 				layerW = parseInt(layerW);
@@ -515,21 +514,21 @@ function p_popLayer(opts){
     }
     // 마우스 이벤트 옵션에 체크되었다면
 	if(opts.chkMouseout){
-		  
+
 		function p_mouseOut(elem,idx){
 			elem.on('mouseout focusout',function(e){
 				var act = function(){elem.find(opts.seLayer).hide();}
 				p_mouseRelative(e,chkClNm + idx,act);
 			});
 		}
-		
+
 		// 오브젝트 요소에 숫자로 넘버링 한다.
 		$obj.each(function(idx){
-			var $this = $(this); 
+			var $this = $(this);
 			$this.addClass(chkClNm + idx);
 			// 마우스 아웃 이벤트 추가
 			p_mouseOut($this,idx);
-			
+
 		});
 	}
 	// 닫기 버튼이 있다면
@@ -538,31 +537,31 @@ function p_popLayer(opts){
 			if(isEmpty(opts.seLayer)){
 				$obj.hide();
 			}else{
-				$obj.find(opts.seLayer).hide();	
+				$obj.find(opts.seLayer).hide();
 			}
-		}); 
+		});
 	}
-	
+
 }
 
 // 파일 컨트롤
 function p_ctrlFiles(){
-	var $obj = $('.ctrlFile'); 
+	var $obj = $('.ctrlFile');
 	if($obj.length == 0){ return; }
 	var $btnFile = $('.ctrlFile-btnFile');
 	var $txt = $('.ctrlFile-fileTxt');
 	var placeTxt = '선택된 파일이 없음';
 	var $btnDel = $('.ctrlFile-btnDel');
-	
+
 	//$btnDel.hide();
-	
+
 	// click file button
 	$obj.each(function(){
 		var $this = $(this);
 		$this.find($btnFile.selector).click(function(){
 			$this.find($txt.selector).parent().find('input[type=file]').click();
 		});
-		
+
 		$this.find('input[type=file]').change(function(){
 			var $this = $(this);
 			var fileVal = $this.val();
@@ -573,7 +572,7 @@ function p_ctrlFiles(){
 			$this.parent().find($txt.selector).text(fileVal[fileValLength-1]);
 			$this.parent().find($btnDel.selector).show();
 		});
-		
+
 		$this.find($btnDel.selector).click(function(){
 			var $this = $(this);
 			$this.parent().find('input[type=file]').val('');
@@ -581,7 +580,7 @@ function p_ctrlFiles(){
 			$this.hide();
 		});
 	});
-	 
+
 }
 // 컨트롤 개인정보 방침 컨틀롤
 function p_ctrlPrivateConfirm(){
@@ -596,22 +595,22 @@ function p_ctrlPrivateConfirm(){
 	$(window).resize(function(){
 		p_set();
 	});
-	
+
 	$('#Ftr').css({zIndex: 5});
 	$('.contsArea').css({zIndex: 25});
 }
 
 function p_ellipsis(selector,lines){
-	var $obj = $(selector); 
+	var $obj = $(selector);
 	if($obj.length == 0) return;
 	// 두줄 줄임 함수 정의
 	function p_fnEllipsis($this, lines){
 		var multiLines = parseInt($this.css('line-height'))*lines;
-		var txt = $this.text(), 
+		var txt = $this.text(),
 			txtL,
 			chk = 0;
-		
-		// 폰트 사이즈 곱하기 라인 높이가 보다 현 엘리먼트가 크다면 
+
+		// 폰트 사이즈 곱하기 라인 높이가 보다 현 엘리먼트가 크다면
 		do{
 			if(multiLines >= $this.innerHeight()){ chk = 1; break;}
 			txtL = txt.length;
@@ -619,7 +618,7 @@ function p_ellipsis(selector,lines){
 			txt = txt.substr(0,txtL-5);
 			$this.text(txt);
 		}while(multiLines < $this.innerHeight())
-		
+
 		if(!chk){
 			// 한번더 4글자를 줄이고 .... 을 붙인다.
 			txtL = txt.length;
@@ -645,7 +644,7 @@ function p_ellipsis(selector,lines){
 			p_fnEllipsis($this,lines);
 		});
 	});
-	
+
 }
 
 // 데이터
@@ -653,10 +652,10 @@ function p_dataPicker(){
 	var	$datePicker = $( ".datePicker" );
 	if($datePicker.length == 0){return;}
 	var bgClassName = 'ui-datepicker-bg';
-	
+
 	$datePicker.datepicker({
 	  showOn: "both",
-      buttonImage: "/page/common/images/btn-calendar.png",
+      buttonImage: "/page/portal/images/sub/btn-calendar.png",
       buttonImageOnly: false,
       buttonText: "",
       beforeShow: function(input, inst) {
@@ -693,7 +692,7 @@ function p_popIntro(){
 		return;
 	}
 	var $bg = $('<div id="topBann-wrapper"></div>').prependTo('body');
-	
+
 	$bg.css({
 		position: 'fixed',
 		zIndex: 45,
@@ -717,7 +716,7 @@ function p_popIntro(){
 		$('.topBann-btnOpen').trigger('click');
 		setTimeout("$('.topBann-btnClose').trigger('click');", 7000);
 	});
-	
+
 	function p_setIntro(){
 		if($popIntro.css('display') == 'block'){
 			$bg.css({width: window.innerWidth, height: window.innerHeight});
@@ -732,7 +731,7 @@ function p_popIntro(){
 			}
 			$('.popIntro-inner').width($elWidth);
 			$('.popIntro-inner').height($elHeight);
-			// 화면의 중앙에 레이어를 띄운다. 
+			// 화면의 중앙에 레이어를 띄운다.
 			if ($elHeight < docHeight || $elWidth < docWidth) {
 				$popIntro.css({
 					marginTop: -$elHeight /2,
@@ -743,17 +742,17 @@ function p_popIntro(){
 			}
 		}
 	}
-	
+
 	p_setIntro();
 	if($popIntro.css('display') == 'none'){
 		return;
 	}
 	$(window).resize(function(){
-		
+
 		p_setIntro();
 	})
-	
-	
+
+
 }
 
 
@@ -803,14 +802,15 @@ $(function(){
 
 	// 헤더 컨트롤
 	p_ctrlHdr();
-	
-	// 플레이스 홀더 
+
+	// 플레이스 홀더
 	p_placehold();
 
+	p_pageTabAutoHeight();
 
-	// 파일 컨트롤 
+	// 파일 컨트롤
 	p_ctrlFiles();
-	
+
 	// 목록 파일 보기 팝업
 	p_popLayer({
 		seTarget: '.popLy',
@@ -820,26 +820,26 @@ $(function(){
 		right: true,
 		chkMouseout: true
 	});
-	
-	// 개인정보동의 
+
+	// 개인정보동의
 	p_ctrlPrivateConfirm();
 
 	// 두 줄  말줄임. css로 처리함
 	//p_ellipsis('.srchResult-contsTxt', 2);
-	
+
 	// 데이터 피커
 	p_dataPicker();
-	
+
 	// 인트로 팝업
 	p_popIntro();
-	
+
 	//// 최상단 배너
 	//p_ctrlTopBann();
 
 	// 모바일 게시판 슬라이드
 	p_boardSlide();
-	
-	//// 프로그래스 
+
+	//// 프로그래스
 	//progressbar();
 
 	$('.pageTab > li.active > a').on('click', function () {
@@ -847,11 +847,6 @@ $(function(){
 		return false;
 	});
 
-	$( window ).on( 'resize load', function( ) {
-		var tabH = $('.pageTab-sub').height() + 20;
-		$('.pageTab').css('padding-bottom',tabH);
-		$('.pageTab-sub').parents('.pageTab').addClass('has');
-	});
 
 	$('.pageTab-sub > li.active > a').on('click', function () {
 		$(this).parents('.pageTab-sub').toggleClass('on');
@@ -864,7 +859,7 @@ $(function(){
 		e.preventDefault();
 		$('.table-style5, #prevBtn_calendar, #nextBtn_calendar, #title_calendar').hide();
 		$('.list1, #prevBtn_list, #nextBtn_list, #title_list').show();
-		
+
 	});
 	$('.btn-calendar').on('click', function(e) {
 		e.preventDefault();
