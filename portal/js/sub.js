@@ -24,12 +24,12 @@ $(function() {
 
     /* breadcrumb */
     $('#sub .breadcrumb_box .box > a').click(function() {
-        $('#sub .breadcrumb_box .box ul.depth').fadeOut();
-        $(this).next().fadeIn();
+        $('#sub .breadcrumb_box .box ul.depth').stop().fadeOut();
+        $(this).next().stop().fadeIn();
         return false;
     });
     $('#sub .breadcrumb_box .box ul.depth').mouseleave(function() {
-        $('#sub .breadcrumb_box .box ul.depth').fadeOut();
+        $('#sub .breadcrumb_box .box ul.depth').stop().fadeOut();
     });
 
 

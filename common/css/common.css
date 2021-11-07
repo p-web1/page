@@ -1583,7 +1583,7 @@ span.listLv4:before,
 
 .pageTab > li a{color:#444;text-align:center;display:flex;align-items:center;justify-content:center;}
 .pageTab > li a img{margin-left:4px;display:inline-block;}
-.pageTab >li.active {background:#3647da; border: 0; /*box-shadow: -2px 14px 18px rgba(0,0,0,.16);*/}
+.pageTab >li.active {background:linear-gradient(to right, #366bda, #3642da); border: 0; /*box-shadow: -2px 14px 18px rgba(0,0,0,.16);*/}
 .pageTab >li.active + li{border-top: 0;}
 .pageTab >li.active a.pageTab-tab,
 .pageTab >li.active a.pageTab-tab:hover,
