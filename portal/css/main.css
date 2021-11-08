@@ -47,8 +47,8 @@ main{overflow: hidden;}
 #section1 .visual .search_box .select_box ul{display: none; height: 200px; padding: 10px 0; position: absolute; top: 61px; width: 100%; background:#fff; border-radius: 10px; box-shadow: 0 20px 30px rgba(0,0,0,.1); overflow-y: scroll;}
 #section1 .visual .search_box .select_box ul li a{display: block; padding: 10px 0 10px 30px; }
 #section1 .visual .search_box .select_box ul li a:hover{font-weight: 500; color: #ff2e39;}
-#section1 .visual .search_box .search{position: relative; float: left; width: calc(100% - 342px); }
-#section1 .visual .search_box .search input{padding-left: 30px; width: calc(100% - 60px); /*width: 399px;*/ height: 50px; line-height: 50px; background: transparent; color: #777; font-weight: 300; font-size: 16px;}
+#section1 .visual .search_box .search{position: relative; float: left; width: 100%; }
+#section1 .visual .search_box .search input{padding-left: 20px; width: calc(100% - 60px); /*width: 399px;*/ height: 50px; line-height: 50px; background: transparent; color: #777; font-weight: 300; font-size: 16px;}
 #section1 .visual .search_box .search input::placeholder{color: #777;}
 #section1 .visual .search_box .search button{position: absolute; top:0; right:20px; width: 40px; height: 50px; }
 #section1 .visual .search_box .search button::after{content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; background: url(../images/common/sp_new.png)no-repeat -190px -110px; background-size: 960px 480px;}
@@ -67,7 +67,6 @@ main{overflow: hidden;}
     #section1 .visual .text_box .text h2 span:last-child{font-size: 54px; line-height: 68px; }
 
     #section1 .visual .search_box .select_box{width: 161px;}
-    #section1 .visual .search_box .search{width: calc(100% - 322px);}
     #section1 .visual .search_box .search input{padding-left: 20px; width: calc(100% - 50px);}
     #section1 .visual .search_box .select_box select,
     #section1 .visual .search_box .search button,
