@@ -196,33 +196,30 @@
 #sub .content_wrap .btn3 .btn3_3:hover{background: #2540a1; color: #fff;}
 
 /* 공통_ui */
-/* 공통_ui_pageTab */
-#sub .content .pageTab{height: 60px!important; margin-bottom: 40px; z-index: 2;}
-#sub .content .pageTab > li a{}
+/* 공통_ui_tab */
+#sub .content .tab_box{margin-bottom: 40px; overflow: hidden;}
+#sub .content .tab_box .tab{position: relative;}
+#sub .content .tab_box .tab::after{content: ""; width: 82px; height: 100%; position: absolute; top:0; right:0; background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%); z-index: 9;}
+#sub .content .tab_box .tab::before{content: ""; width: 82px; height: 100%; position: absolute; top:0; left:0; background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%); z-index: 9;}
+#sub .content .tab_box .tab .swiper-wrapper{display: table; table-layout: fixed;  width: 100%; z-index: 2;}
+#sub .content .tab_box .tab a{display: table-cell; width: 220px; height: 60px; line-height: 60px; font-size: 20px; background: #f0f0f0; color: #444; text-align: center;}
+#sub .content .tab_box .tab a.active {color: #fff; background: linear-gradient(to right, #366bda,  #3642da);}
+#sub .content .tab_box .tab.right::after{display: none;}
+#sub .content .tab_box .tab.left::before{display: none;}
 
 @media (max-width: 1199px) {
 
-    #sub .content .pageTab{margin-bottom: 30px;}
+    #sub .content .tab_box{margin-bottom: 30px;}
+    #sub .content .tab_box .tab a{height: 50px; line-height: 50px; font-size: 18px;}
 
 }
 
 @media (max-width: 1024px) {
 
-    #sub .content .pageTab{margin-bottom: 20px;}
+    #sub .content .tab_box{margin-bottom: 20px;}
 
 }
 
-@media (max-width: 999px) {
-
-    #sub .content .pageTab{height: 86px!important;}
-
-}
-
-@media (max-width: 639px) {
-
-    #sub .content .pageTab{height: 43px!important;}
-
-}
 
 /* 공통_ui_contsLead */
 #sub .content .contsLead{padding: 25px 10px 25px 55px; border: 5px solid #ddd;}
