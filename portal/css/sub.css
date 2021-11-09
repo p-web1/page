@@ -613,4 +613,17 @@ img[src*="btn-calendar"]{width: auto;}
 #sub .content_wrap .content .box a.more{display: block; width: 19px; height: 19px; position: absolute; top:0 right:0;}
 #sub .content_wrap .content ul.info_list.st2 li a .text_box{padding: 59px 10px 19px 18px; }
 #sub .content_wrap .content ul.info_list.st2 li a span.area{top:19px;}
-#sub .content_wrap .content ul.info_list.st2 li a .text_box
+#sub .content_wrap .content ul.info_list.st2 li a .text_box{}
+
+/* 게시물 */
+#sub .content_wrap .content .top{height: 400px}
+#sub .content_wrap .content .top .img{float: left; margin-right: 100px; width: 425px; height: 300px;}
+#sub .content_wrap .content .top .img img{display: block; width: 100%;}
+#sub .content_wrap .content .top .text{float: left;}
+#sub .content_wrap .content .top .text h4{margin-bottom: 37px; font-size: 26px; color: #111; font-weight: 600;}
+#sub .content_wrap .content .top .text dl{margin-bottom: 14px; overflow: hidden;}
+#sub .content_wrap .content .top .text dt{float: left; width: 119px; font-weight: 500; color: #111; line-height: 22px;}
+#sub .content_wrap .content .top .text dd{float: left; font-weight: 300; color: #444; line-height: 22px;}
+#sub .content_wrap .content .box2 h5{line-height: 1;}
+#sub .content_wrap .content .box2 .pgraph{margin-bottom: 0; padding-top: 0;}
+#sub .content_wrap .content .box2 .listLv li{padding: 0; line-height: 1}

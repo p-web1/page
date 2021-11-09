@@ -218,13 +218,14 @@ main{overflow: hidden;}
 #section3 .left .tab1 a.icon1::before{top:18px; right:33px; width: 94px; height: 114px; background-position: -834px -105px;}
 #section3 .left .tab1 a.icon2::before{top: 20px; right: 20px; width: 120px; height: 110px; background-position: -820px -265px;}
 #section3 .left .tab1 a.active::after{top:165px; background-position: -434px -110px; transform: none;}
-#section3 .right_box{overflow: auto;}
-#section3 .right{float: left; /*width: calc(100% - 361px);*/ width: 1039px; min-height: 540px; padding: 50px 50px 40px; background: #fff; border-radius: 30px;}
+#section3 .right_box{overflow: auto; background: #fff; border-radius: 30px;}
+#section3 .right{float: left; /*width: calc(100% - 361px);*/ width: 1039px; min-height: 540px; padding: 50px 50px 40px;}
 #section3 .right:nth-of-type(1){padding:50px 35px 50px;}
 #section3 .right:nth-of-type(1) ul.tab2{width: auto;}
 #section3 .right:nth-of-type(1) ul.tab2 li{width: auto; margin-bottom: 19px;}
 #section3 .right:nth-of-type(1) ul.tab2 li:nth-child(2n){margin-right: 10px}
-#section3 .right .bar_graph{height: 381px;}
+#section3 .right .bar_graph{height: 440px;}
+#section3 .right .bar_graph .chart{width: 825px;}
 #section3 .right .bar_graph img{display: block;}
 #section3 .right ul.tab2{float: left; /*margin-right: 50px;*/ width: 210px;}
 #section3 .right ul.tab2 li{float: left; width: 47.62%; margin: 0 10px 10px 0;}
@@ -259,8 +260,8 @@ main{overflow: hidden;}
     #section3 .left .tab1 a.icon2::before{top: 15px; right: 15px;}
 
 
-    #section3 .right{padding: 30px; border-radius: 20px;}
-    #section3 .right:nth-of-type(1){padding: 30px;}
+    #section3 .right_box{border-radius: 20px;}
+    #section3 .right{padding: 30px;}
     #section3 .right ul.tab2{width: 185px;}
     #section3 .right ul.tab2 li{width: auto; margin-right: 5px;}
     #section3 .right ul.tab2 li a{width: 90px; height: 35px; line-height: 35px; font-size: 18px;}
@@ -287,7 +288,9 @@ main{overflow: hidden;}
     #section3 .right ul.tab2,
     #section3 .right .circle,
     #section3 .right ul.list{float: none; width: 100%;}
-    #section3 .right_box{clear: both; overflow: visible;}
+    #section3 .right_box{clear: both;}
+    #section3 .right:nth-of-type(1){min-height: auto;}
+    #section3 .right:nth-of-type(1) .tab2_box{overflow: visible;}
     #section3 .right .tab2_box{overflow: auto;}
     #section3 .right .tab2_box ul.tab2{width: 924px;}
     #section3 .right ul.tab2{margin:10px 0 15px;}
@@ -297,6 +300,8 @@ main{overflow: hidden;}
     #section3 .right .circle{margin: 20px 0 30px; padding: 0;}
     #section3 .right ul.list li em{font-size: 30px;}
     #section3 .right ul.list li{padding-left: 46px; margin-bottom: 26px;}
+
+    #section3 .right .bar_graph{height: auto;}
 
 }
 
@@ -313,8 +318,6 @@ main{overflow: hidden;}
     #section3 .left h3{margin-bottom:41px; font-size: 28px; line-height: 48px;}
 
 }
-
-
 
 /* section4 */
 #section4{padding: 121px 0 123px; background: linear-gradient(to right, #366bda, #3641da);}
