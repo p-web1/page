@@ -26,6 +26,8 @@ input, select, textarea{font-family:'S-CoreDream', sans-serif; font-size:16px; c
 .slick-slider .slick-list .slick-track.slick-loading .slick-slide {visibility:hidden}
 .slick-slider .slick-arrow.slick-hidden {display:none}
 
+main{overflow: hidden;}
+
 /* 가운데영역 */
 .container{max-width: 1400px; margin: 0 auto;}
 
