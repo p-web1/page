@@ -343,7 +343,7 @@
 #search_page .search_top::after{content: ""; width: 1920px; height: 100%; position: absolute; top:0; left: 50%; margin-left: -960px; background: linear-gradient(#366bda, #3642da); z-index: -1;}
 #search_page .search_top .search_box{position: relative; max-width: 1000px; height: 72px; line-height: 72px; margin: 0 auto; border-bottom: 2px solid #fff;}
 #search_page .search_top .search_box select{padding-left: 11px; width: 130px; height: 100%; font-size: 18px; color: #fff; background: url(../images/sub/select.png)no-repeat 103px center; cursor: pointer; appearance:none; -webkit-appearance:none; -moz-appearance:none;}
-#search_page .search_top .search_box input{padding-left: 380px; width: calc(100% - 45px); height: 100%; font-size: 24px; color:#fff; background: transparent}
+#search_page .search_top .search_box input{padding-left: 380px; width: calc(100% - 134px); height: 100%; font-size: 24px; color:#fff; background: transparent}
 #search_page .search_top .search_box input::placeholder{color: #fff;}
 #search_page .search_top .search_box button{position: absolute; top:50%; transform: translateY(-50%); right:0; width: 52px; height: 100%; }
 #search_page .search_top .search_box button::after{content: ""; width: 30px; height: 30px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: url(../images/sub/search.png)no-repeat;}
@@ -440,7 +440,7 @@ img[src*="btn-calendar"]{width: auto;}
 
     #search_page .search_top{padding: 116px 0 62px;}
 
-    #search_page .search_top .search_box input{width: calc(100% - 50px);}
+    #search_page .search_top .search_box input{width: calc(100% - 124px);}
     #search_page .search_top .search_box button::after{transform: translateY(-50%) scale(0.9);}
     #search_page .search_top .search_box button{width: 30px;}
 
