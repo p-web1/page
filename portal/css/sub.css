@@ -562,7 +562,7 @@ img[src*="btn-calendar"]{width: auto;}
 }
 
 /* 목록 */
-#sub .content_wrap .content ul.info_list{margin: 30px -12px -14px;}
+#sub .content_wrap .content ul.info_list{margin: 30px -12px 0;}
 #sub .content_wrap .content ul.info_list > li{float: left; width: 23%; margin: 0 1% 50px;}
 #sub .content_wrap .content ul.info_list li a{position: relative; display:block; border: 1px solid #c1c1c1; transition: all .3s;}
 #sub .content_wrap .content ul.info_list li a:hover{position: relative; top: -10px; box-shadow: 0 20px 20px rgba(0,0,0,.1); }
@@ -607,15 +607,24 @@ img[src*="btn-calendar"]{width: auto;}
 }
 
 /* 목록(전체) */
-#sub .content_wrap .content .box{position: relative; margin:30px 0 22px; border-bottom: 1px solid #d2d2d2;}
+#sub .content_wrap .content .box{position: relative; margin:30px 0 0; padding-bottom: 22px;}
+#sub .content_wrap .content .box::after{content: ""; position: absolute; left:0; right:0; bottom: 22px; border-bottom: 1px solid #d2d2d2;}
 #sub .content_wrap .content .box h4{font-size: 24px; color: #000; font-weight: 600;}
 #sub .content_wrap .content .box h4 span{color: #777; font-weight: 400;}
 #sub .content_wrap .content .box a.more{position: relative; display: block; padding-left: 15px; width: 100px; height: 30px; line-height: 28px; border: 1px solid #111; position: absolute; top:0; right:0; border-radius: 50px; font-size: 14px; color: #111;}
 #sub .content_wrap .content .box a.more::after{content: ""; position: absolute; right: 16px; top: 50%; margin-top: -0.5px; width: 15px; height: 1px; background: #2d2d2d;}
 #sub .content_wrap .content .box a.more::before{content: ""; position: absolute; right: 23px; top: 50%; margin-top: -7.5px; width: 1px; height: 15px; background: #2d2d2d;}
+#sub .content_wrap .content .box ul.info_list li{}
 #sub .content_wrap .content ul.info_list.st2 li a .text_box{padding: 59px 10px 19px 18px; }
 #sub .content_wrap .content ul.info_list.st2 li a span.area{top:19px;}
 #sub .content_wrap .content ul.info_list.st2 li a .text_box{}
+
+@media (max-width: 1199px) {
+
+    #sub .content_wrap .content .box{padding-bottom: 0; border-bottom: 1px solid #d2d2d2;}
+    #sub .content_wrap .content .box::after{display: none;}
+
+}
 
 /* 게시물 */
 #sub .content_wrap .content .top{position: relative; padding: 50px 0; min-height: 400px}
@@ -660,9 +669,9 @@ img[src*="btn-calendar"]{width: auto;}
 
     #sub .content_wrap .content .box2 ul.img_box{position: relative; top: 0; padding: 30px 0;}
 
-    #sub .content_wrap .content .box a.more{width: 90px; padding-left: 12px; }
-    #sub .content_wrap .content .box a.more::before{right: 20px;}
-    #sub .content_wrap .content .box a.more::after{right: 13px;}
+    #sub .content_wrap .content .box a.more{width: 85px; height: 28px; line-height: 26px; padding-left: 12px; }
+    #sub .content_wrap .content .box a.more::before{right: 17px;}
+    #sub .content_wrap .content .box a.more::after{right: 10px;}
 
 }
 
