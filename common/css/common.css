@@ -1648,13 +1648,13 @@ span.listLv4:before,
 
 }
 @media screen and (min-width: 640px) and (max-width: 999px){
-	.pageTab >li {width:calc((100% - 17px) / 3);margin-right:8px}
+	.pageTab >li {width:calc((100% - 17px) / 3);}
 	.pageTab >li:nth-child(4n){margin-right:8px;}
 	.pageTab >li:nth-child(3n){margin-right:0px;}
 	.pageTab >li:nth-child(n+4){margin-top:8px;}
 
-	.pageTab >li:nth-child(1):nth-last-child(2){width:calc((100% - 8px) / 2);}
-	.pageTab >li:nth-child(2):nth-last-child(1){width:calc((100% - 9px) / 2);margin-right:0 !important;}
+	.pageTab >li:nth-child(1):nth-last-child(2){width:calc((100% - 0px) / 2);}
+	.pageTab >li:nth-child(2):nth-last-child(1){width:calc((100% - 0px) / 2);margin-right:0 !important;}
 
 	.pageTab-sub li:nth-child(3n+1) {margin: 0;}
 	.pageTab-sub li {width: 33.33333%;}

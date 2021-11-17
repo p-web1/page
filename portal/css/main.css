@@ -233,7 +233,7 @@ main{overflow: hidden;}
 #section3 .right ul.tab2 li a{display: block; width: 100px; height: 40px; line-height: 40px; border-radius: 50px; border: 1px solid #777; color: #111; font-size: 20px; font-weight: 500; text-align: center; transition: all .3s;}
 #section3 .right ul.tab2 li a:hover{background: #333; color: #fff; border: 0;}
 #section3 .right ul.tab2 li a.active{background: #333; color: #fff; border: 0;}
-#section3 .right .circle{float: left; padding-top: 20px; width: calc(100% - 450px); text-align: center;}
+#section3 .right .circle{float: left; padding-top: 20px; width: calc(100% - 450px); text-align: center; overflow: auto;}
 #section3 .right .circle img{display: block; max-width: 400px; width: 100%; margin: 0 auto;}
 #section3 .right ul.list{float: left; width: 240px;}
 #section3 .right ul.list li{position: relative; margin-bottom: 34px; padding: 7px 0 0 50px; height: 60px;border-bottom: 1px solid #d2d2d2;}
