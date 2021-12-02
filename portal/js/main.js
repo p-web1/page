@@ -5,7 +5,7 @@ $(function() {
     var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         initialSlide: 0,
-        speed: 1500,
+        speed: 3000,
         loop: true,
         loopAdditionalSlides: 1,
         pagination: {
@@ -17,12 +17,14 @@ $(function() {
             delay: 2000,
             disableOnInteraction: false,
         },
+        /*
         on: {
             slideChange: function() {
                 $('#section1 .visual .text_box .text').removeClass('active');
                 $('#section1 .visual .text_box .text').eq(this.realIndex).addClass('active');
             }
         }
+        */
     });
     $('#section1 .visual button.pause').on('click', function() {
         $(this).hide();
@@ -90,10 +92,17 @@ $(function() {
         return false;
     });
 
+    $('#section5 .slick').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('#section5 .text:nth-of-type(' + (currentSlide + 1) + ')').fadeOut();
+    });
+    $('#section5 .slick').on('afterChange', function(event, slick, currentSlide) {
+        $('#section5 .text:nth-of-type(' + (currentSlide + 1) + ')').fadeIn();
+    });
+
     /* section5 */
     $('#section5 .slick').slick({
         variableWidth: true,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
         dots: false,
         prevArrow: $('#section5 .control button'),
@@ -101,16 +110,24 @@ $(function() {
         accessibility: false,
         draggable: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         zIndex: 1000,
         pauseOnHover: false,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         speed: 1500,
+        swipe: true,
         responsive: [{
-            breakpoint: 1400,
-            settings: {}
+            breakpoint: 769,
+            settings: {
+                centerMode: true,
+            }
         }, ]
+    });
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
     });
 
 });

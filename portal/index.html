@@ -34,6 +34,8 @@
     <script src="/page/common/js/tour.js"></script>
     <script src="/page/common/js/foto.min.js"></script>
     <script src="/page/common/js/swiper.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="/page/common/js/jquery.counterup.min.js"></script>
 
     <link rel="stylesheet" href="/page/portal/css/style.css" />
     <link rel="stylesheet" href="/page/portal/css/main.css" />
@@ -190,6 +192,7 @@
 
                     <div class="btn_sitemap_box">
                         <button class="btn_sitemap"><span class="blind">사이트맵열기</span></button>
+                        <button class="mobile_open"><span class="blind">모바일메뉴열기</span></button>
                     </div>
                     <!-- //sitemap_box -->
 
@@ -290,6 +293,142 @@
 
             <div class="sitemap_bg"></div>
             <!-- //sitemap_bg -->
+            <div id="mobile_menu">
+                <div class="mobile_menu">
+                    <div class="box">
+                        <div class="sns">
+                            <a href="https://www.instagram.com/donggeul_daeri/" class="insta" target="_blank"><span class="blind">인스타그램</span></a>
+                            <a href="http://pf.kakao.com/_PnCps" class="kakao" target="_blank"><span class="blind">카카오톡친구추가</span></a>
+                        </div>
+                        <a href="/pet/service/login" class="login">로그인</a>
+                        <a href="/pet/service/join" class="signup">회원가입</a>
+                    </div>
+                    <!-- //box -->
+                    <ul class="mobile_menu_depth1">
+                        <li>
+                            <h2>
+                                <a href="/pet/tour" target="_self">
+                                    서비스 소개
+                                </a>
+                            </h2>
+                            <ul class="mobile_menu_depth2">
+                                <li>
+                                    <h3>
+                                        <a href="/pet/tour/map" target="_self">
+                                            서비스 안내
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/pet/tour/spot" target="_self">
+                                            공지사항
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/pet/tour/sleep" target="_self">
+                                            문의하기
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
+                            <!-- //mobile_menu_depth2 -->
+
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="/pet/recommend" target="_self">
+                                    데이터 찾기
+                                </a>
+                            </h2>
+                            <ul class="mobile_menu_depth2">
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            통합 데이터 보기
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            숙박지
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            식음료
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            관광지
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            체험
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            동물병원
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
+                            <!-- //mobile_menu_depth2 -->
+
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="/pet/dictionary" target="_self">
+                                    데이터지도보기
+                                </a>
+                            </h2>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="/pet/community" target="_self">
+                                    OpenAPI
+                                </a>
+                            </h2>
+                            <ul class="mobile_menu_depth2">
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            Open API 목록
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="depth2">
+                                        <a href="/pet/recommend/course" target="_self">
+                                            Open API 활용방법
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
+                            <!-- //mobile_menu_depth2 -->
+
+                        </li>
+                    </ul>
+                    <!-- //mobile_menu_depth1 -->
+
+                </div>
+                <!-- //mobile_menu -->
+
+            </div>
 
         </header>
         <!-- //header -->
@@ -300,22 +439,6 @@
                 <div class="visual">
                     <div class="text_box">
                         <div class="container">
-                            <div class="text">
-                                <h2>
-                                    <span>강원도에서 반려동물과 함께</span>
-                                    <span>동반관광정보를 찾아보세요!</span>
-                                </h2>
-                            </div>
-                            <!-- //text -->
-
-                            <div class="text">
-                                <h2>
-                                    <span>강원도에서 반려동물과 함께</span>
-                                    <span>동반관광정보를 찾아보세요!</span>
-                                </h2>
-                            </div>
-                            <!-- //text -->
-
                             <div class="text">
                                 <h2>
                                     <span>강원도에서 반려동물과 함께</span>
@@ -666,44 +789,44 @@
                     <div class="section4">
                         <ul class="list clearfix">
                             <li>
-                                <a href="#" class="lodgment">
+                                <div href="#" class="lodgment">
                                     <span>숙박지</span>
                                     <p>
-                                        <strong>100</strong><em>건</em>
+                                        <strong class="counter">100</strong><em>건</em>
                                     </p>
-                                </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="beverage">
+                                <div href="#" class="beverage">
                                     <span>식음료</span>
                                     <p>
-                                        <strong>100</strong><em>건</em>
+                                        <strong class="counter">100</strong><em>건</em>
                                     </p>
-                                </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="tourist_destination">
+                                <div href="#" class="tourist_destination">
                                     <span>관광지</span>
                                     <p>
-                                        <strong>100</strong><em>건</em>
+                                        <strong class="counter">100</strong><em>건</em>
                                     </p>
-                                </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="experience">
+                                <div href="#" class="experience">
                                     <span>체험</span>
                                     <p>
-                                        <strong>100</strong><em>건</em>
+                                        <strong class="counter">100</strong><em>건</em>
                                     </p>
-                                </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="animal_hospital">
+                                <div href="#" class="animal_hospital">
                                     <span>동물병원</span>
                                     <p>
-                                        <strong>100</strong><em>건</em>
+                                        <strong class="counter">100</strong><em>건</em>
                                     </p>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                         <!-- //list -->
@@ -720,35 +843,62 @@
             <section id="section5">
                 <div class="container">
                     <div class="section5 clearfix">
-                        <div class="text">
-                            <h3>
-                                서비스 안내
-                            </h3>
-                            <p>
-                                강원도 반려동물 동반관광 Open API 시스템은<br>
-                                강원도내 반려동물 동반가능 여행지에 대한<br>
-                                숙박, 식음료,관광지 등 주요정보를 제공하는<br>
-                                공유서비스입니다.
-                            </p>
-                            <a href="#" class="more">
-                                더보기
-                            </a>
+                        <div class="text_box">
+                            <div class="text">
+                                <h3>
+                                    서비스 안내
+                                </h3>
+                                <p>
+                                    강원도 반려동물 동반관광 Open API 시스템은<br>
+                                    강원도내 반려동물 동반가능 여행지에 대한<br>
+                                    숙박, 식음료,관광지 등 주요정보를 제공하는<br>
+                                    공유서비스입니다.
+                                </p>
+                                <a href="#" class="more">
+                                    더보기
+                                </a>
+                            </div>
+                            <!-- //text -->
+
+                            <div class="text" style="display:none;">
+                                <h3>
+                                    Open API
+                                </h3>
+                                <p>
+                                    강원도 반려도물 동반관광의 원하는 정보를<br>
+                                    Open API를 통해 활용하실 수 있습니다.
+
+                                </p>
+                                <a href="#" class="more">
+                                    더보기
+                                </a>
+                            </div>
+                            <!-- //text -->
+
+                            <div class="text" style="display:none;">
+                                <h3>
+                                    데이터 지도 보기
+                                </h3>
+                                <p>
+                                    반려동물 동반관광데이터를<br>
+                                    지도로 정확하게 찾을 수 있습니다.
+                                </p>
+                                <a href="#" class="more">
+                                    더보기
+                                </a>
+                            </div>
+                            <!-- //text -->
+
                         </div>
-                        <!-- //text -->
+                        <!-- //text_box -->
 
                         <div class="img_box">
                             <ul class="img slick clearfix">
                                 <li>
-                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                    <img src="/page/portal/images/main/img02.png" alt="">
                                 </li>
                                 <li>
-                                    <img src="/page/portal/images/main/img01.png" alt="">
-                                </li>
-                                <li>
-                                    <img src="/page/portal/images/main/img01.png" alt="">
-                                </li>
-                                <li>
-                                    <img src="/page/portal/images/main/img01.png" alt="">
+                                    <img src="/page/portal/images/main/img03.png" alt="">
                                 </li>
                                 <li>
                                     <img src="/page/portal/images/main/img01.png" alt="">

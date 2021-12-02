@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <title>강원도 반려동물 동반관광 API 시스템_게시물</title>
+    <title>강원도 반려동물 동반관광 API 시스템_API 활용방법</title>
     <meta name="Keywords" content="" />
     <meta name="Description" content="" />
     <meta name="Author" content="" />
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/page/common/css/jquery-ui.min.css" />
     <link rel="stylesheet" href="/page/common/css/tour.css" />
     <link rel="stylesheet" href="/page/common/css/daummap.css" />
-    <link rel="stylesheet" href="/page/common/css/swiper.min.css" />
 
     <script src="/page/common/js/jquery-1.12.2.min.js"></script>
     <script src="/page/common/js/jquery.easing.1.3.min.js"></script>
@@ -33,7 +32,6 @@
     <script src="/page/common/js/jquery-dateFormat.min.js"></script>
     <script src="/page/common/js/tour.js"></script>
     <script src="/page/common/js/foto.min.js"></script>
-    <script src="/page/common/js/swiper.min.js"></script>
 
     <link rel="stylesheet" href="/page/portal/css/style.css" />
     <link rel="stylesheet" href="/page/portal/css/sub.css" />
@@ -384,179 +382,255 @@
 
                         <a href="#A-Contents-focus" id="A-Contents-focus" class="blind">본문 시작</a>
                         <div class="content">
-                            <div class="top clearfix">
-                                <div class="img">
-                                    <img src="/page/portal/images/sub/img01.jpg" alt="">
-                                </div>
-                                <!-- //img -->
+                            <h5 class="titLv2">
+                                1. 지역 코드 별 리스트
+                            </h5>
+                            <ul class="listLv">
+                                <li>지역 코드를 사용해 콘텐츠의 리스트를 활용할 수 있는 API입니다. areaCode라는 매개변수를 사용하여 강원도 내 특정 지역에 해당하는 관광, 숙박, 식음료, 체험, 동물병원 시설의 정
+                                    보를 JSON 타입으로 불러올 수 있습니다. pageBlock, page 매개변수를 사용해 페이징을 하여 자료를 출력할 수 있습니다. 지역 코드 별 리스트에서 불러오는 정보들은 업체 명, 지역
+                                    명, 분야 명, 주소, 위도, 경도, 전화번호입니다.</li>
+                                <li>샘플코드 (변경되는 부분)</li>
+                            </ul>
 
-                                <div class="text">
-                                    <h4>
-                                        멍비치
-                                    </h4>
-                                    <dl>
-                                        <dt class="icon1">주소</dt>
-                                        <dd>강원도 양양군 현남면 광진리 78-20
-                                            <button class="copy_btn">주소복사</button>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt class="icon2">문의</dt>
-                                        <dd>010 - 7588 - 8816</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt class="icon3">이용시간</dt>
-                                        <dd>9:00 ~ 20:00 / 매년 7~8월</dd>
-                                    </dl>
-                                    <dl>
-                                        <dt class="icon4">홈페이지</dt>
-                                        <dd>
-                                            <a href="https://cafe.naver.com/grayonhjj" target="_blank" title="새 창 열기">https://cafe.naver.com/grayonhjj</a>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt class="icon5">키워드</dt>
-                                        <dd>#양양 # 해변 # 애견비치 # 바다 # 물놀이 # 중형견 # 대형견</dd>
-                                    </dl>
-                                </div>
-                                <!-- //text -->
+                            <div class="imptBox">
+                                <pre>
+/* Java 샘플 코드 */
 
-                            </div>
-                            <!-- //top -->
 
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    소개
-                                </h5>
-                                <p class="pgraph">
-                                    양양의 반려견 동반 해수욕장 멍비치입니다.
-                                </p>
-                            </div>
-                            <!-- //box -->
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.IOException;
 
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    주요시설
-                                </h5>
-                                <ul class="listLv">
-                                    <li>강아지 샤워실</li>
-                                    <li>사람 샤워실</li>
-                                    <li>튜브대여</li>
-                                    <li>주차장</li>
-                                </ul>
-                            </div>
-                            <!-- //box -->
-
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    주요시설
-                                </h5>
-                                <ul class="listLv">
-                                    <li>강아지 샤워실</li>
-                                    <li>사람 샤워실</li>
-                                    <li>튜브대여</li>
-                                    <li>주차장</li>
-                                </ul>
-                            </div>
-                            <!-- //box -->
-
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    이용요금
-                                </h5>
-                                <ul class="listLv">
-                                    <li>견주 : 5000원</li>
-                                    <li>파라솔 : 10000원</li>
-                                    <li>소형견(~ 5kg) : 5000원</li>
-                                    <li>중형견(5 ~ 10kg) : 10000원</li>
-                                    <li>대형견(10kg ~) : 15000원</li>
-                                </ul>
-                            </div>
-                            <!-- //box -->
-
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    애견 정책 및 주의사항
-                                </h5>
-                                <ul class="listLv">
-                                    <li>입질, 공격성 있는 강아지 출입 금지</li>
-                                    <li>컨트롤 안되는 소형견 전화문의</li>
-                                    <li>음료류, 강아지 간식 가능</li>
-                                    <li>반려견한테 해롭지 않는 과일은 손질해서 락앤락에 넣으면 가능</li>
-                                    <li>피자, 치킨, 라면 등등 반입 절대 금지</li>
-                                    <li>강아지 샤워실 물샤워만 가능(샴푸x)</li>
-                                    <li>반려견이 노는 공간이니 만큼 사람용 보트, 홍학 등 부피가 큰 튜브는 반입 불가</li>
-                                    <li>반려견 똥을 제외한 쓰레기는 전부 가지고 가야함</li>
-                                    <li>간식은 본인 반려견만 혹은 허락 받고 급여</li>
-                                    <li>해변을 제외한 곳에서 강아지 목줄 필수</li>
-                                    <li>불리견종(믹스포함), 법정맹견(믹스포함) 불가</li>
-                                    <li>공격성 없는 리트리버, 쉽독, 콜리, 두들 입장 가능</li>
-                                    <li>통제 가능하고 공격성 없는 진도, 허스키, 말라뮤트 목줄 착용하고 입장 가능</li>
-                                    <li>통제 가능하고 공격성 없는 도베르만 목줄, 입마개 착용하고 입장 가능</li>
-                                    <li>본인 반려견한테서 눈 떼지 말고 관리 필수</li>
-                                </ul>
-                            </div>
-                            <!-- //box -->
-
-                            <div class="box2">
-                                <h5 class="titLv2">
-                                    지도보기
-                                </h5>
-                                <p class="pgraph">
-                                    주소 : 강원도 양양군 현남면 광진리 78-20
-                                </p>
-                                <div class="map">
-                                    <img src="/page/portal/images/sub/map.jpg" alt="">
-                                </div>
-                            </div>
-                            <!-- //box -->
-
-                            <div class="box2 img_box">
-                                <h5 class="titLv2">
-                                    사진보기
-                                </h5>
-                                <ul class="img_list clearfix">
-                                    <li>
-                                        <img src="/page/portal/images/sub/1.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/2.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/3.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/4.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/5.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/6.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/7.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/8.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/9.jpg" alt="">
-                                    </li>
-                                    <li>
-                                        <img src="/page/portal/images/sub/10.jpg" alt="">
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- //box -->
-
-                            <div class="skinTxa-right">
-                                <a href="#" class="skinBtnBo skinBtnBo-data-pos">목록</a>
+public class ApiExplorer {
+    public static void main(String[] args) throws IOException {
+        StringBuilder urlBuilder = new StringBuilder("/api/listArea.do"); /*URL*/
+        urlBuilder.append("?" + URLEncoder.encode("page","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
+        urlBuilder.append("&" + URLEncoder.encode(“pageBlock","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
+        urlBuilder.append("&" + URLEncoder.encode("partCode“,"UTF-8") + "+ URLEncoder.encode("AC10", "UTF-8")); /*지역 코드*/
+        URL url = new URL(urlBuilder.toString());
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Content-type", "application/json");
+        System.out.println("Response code: " + conn.getResponseCode());
+        BufferedReader rd;
+        if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
+            rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        } else {
+            rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+        }
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+        conn.disconnect();
+        System.out.println(sb.toString());
+    }
+}
+                                </pre>
                             </div>
 
-                        </div>
-                        <!-- //content -->
+                            <h5 class="titLv2">2. 분야 코드 별
+                                리스트</h5>
+
+                            <ul class="listLv">
+                                <li>
+                                    분야 코드를 사용해 콘텐츠의 리스트를 활용할 수 있는 API입니다. partCode라는 매개변수를 사용하여 관광, 숙박, 식음료, 체험, 동물병원 중 특정 분야에 해당하는 강원도 내 시설의 정보를 JSON 타입으로 불러올 수 있습니다. pageBlock, page 매개변수를 사용해 페이징을 하여 자료를 출력할 수 있습니다. 분야 코드 별 리스트에서 불러오는
+                                    정보들은 업체 명, 지역 명, 분야 명, 주소, 위도, 경도, 전화번호입니다.
+                                </li>
+                                <li>
+                                    샘플코드 (변경되는 부분)
+                                </li>
+                            </ul>
+
+                            <div class="imptBox">
+                                <pre>
+/* Java 샘플 코드 */
+
+
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class ApiExplorer {
+    public static void main(String[] args) throws IOException {
+        StringBuilder urlBuilder = new StringBuilder("/api/listPart.do"); /*URL*/
+        urlBuilder.append("?" + URLEncoder.encode("page","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
+        urlBuilder.append("&" + URLEncoder.encode(“pageBlock","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
+        urlBuilder.append("&" + URLEncoder.encode("partCode“,"UTF-8") + "+ URLEncoder.encode("PC02", "UTF-8")); /*분야 코드*/
+        URL url = new URL(urlBuilder.toString());
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Content-type", "application/json");
+        System.out.println("Response code: " + conn.getResponseCode());
+        BufferedReader rd;
+        if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
+            rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        } else {
+            rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+        }
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+        conn.disconnect();
+        System.out.println(sb.toString());
+    }
+}
+                                </pre>
+                            </div>
+
+                            <h5 class="titLv2">3. 지역 코드, 콘텐츠 번호 별 상세</h5>
+
+                            <ul class="listLv">
+                                <li>
+                                    지역 코드와 콘텐츠 번호에 따른 상세 정보를 활용할 수 있는 API입니다. 지역 코드 별 리스트 API에서 콘텐츠 번호를 참고해, areaCode, contentSeq의 매개변수를 입력하여 조회를 원하는 시설의 상세 정보를 JSON 타입으로 받아올 수 있습니다. 해당 API에서는 콘텐츠 데이터에 해당하는 모든 정보들을 활용할 수 있습니다.
+                                </li>
+                                <li>
+                                    샘플코드 (변경되는 부분)
+                                </li>
+                            </ul>
+
+                            <div class="imptBox">
+                                <pre>
+/* Java 샘플 코드 */
+
+
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;/* Java 샘플 코드 */
+
+
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class ApiExplorer {
+    public static void main(String[] args) throws IOException {
+        StringBuilder urlBuilder = new StringBuilder("/api/listPart.do"); /*URL*/
+        urlBuilder.append("?" + URLEncoder.encode("page","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
+        urlBuilder.append("&" + URLEncoder.encode(“pageBlock","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
+        urlBuilder.append("&" + URLEncoder.encode("partCode“,"UTF-8") + "+ URLEncoder.encode("PC02", "UTF-8")); /*분야 코드*/
+        URL url = new URL(urlBuilder.toString());
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Content-type", "application/json");
+        System.out.println("Response code: " + conn.getResponseCode());
+        BufferedReader rd;
+        if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
+            rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        } else {
+            rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+        }
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+        conn.disconnect();
+        System.out.println(sb.toString());
+    }
+}
+import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class ApiExplorer {
+    public static void main(String[] args) throws IOException {
+        StringBuilder urlBuilder = new StringBuilder("/api/detailSeqArea.do"); /*URL*/
+        urlBuilder.append("?" + URLEncoder.encode("areaCode“,"UTF-8") + "+ URLEncoder.encode(”AC01", "UTF-8")); /*지역 코드*/
+        urlBuilder.append("&" + URLEncoder.encode("contentSeq","UTF-8") + "=" + URLEncoder.encode("2", "UTF-8")); /*콘텐츠 번호*/
+        URL url = new URL(urlBuilder.toString());
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Content-type", "application/json");
+        System.out.println("Response code: " + conn.getResponseCode());
+        BufferedReader rd;
+        if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
+            rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        } else {
+            rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+        }
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+        conn.disconnect();
+        System.out.println(sb.toString());
+    }
+}
+                                </pre>
+                            </div>
+
+                            <h5 class="titLv2">4. 분야 코드, 콘텐츠 번호 별 상세</h5>
+
+                            <ul class="listLv">
+                                <li>
+                                    분야 코드와 콘텐츠 번호에 따른 상세 정보를 활용할 수 있는 API입니다. 분야 코드 별 리스트 API에서 콘텐츠 번호를 참고해, partCode, contentSeq의 매개변수를 입력하여 조회를 원하는 시설의 상세 정보를 JSON 타입으로 받아올 수 있습니다. 해당 API에서는 콘텐츠 데이터에 해당하는 모든 정보들을 활용할 수 있습니다.
+                                </li>
+                                <li>
+                                    샘플코드 (변경되는 부분)
+                                </li>
+                            </ul>
+
+                            <div class="imptBox">
+                                <pre>
+/* Java 샘플 코드 */
+
+
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class ApiExplorer {
+    public static void main(String[] args) throws IOException {
+        StringBuilder urlBuilder = new StringBuilder("/api/detailSeqPart.do"); /*URL*/
+        urlBuilder.append("?" + URLEncoder.encode("partCode“,"UTF-8") + "+ URLEncoder.encode(”PC02", "UTF-8")); /*분야 코드*/
+        urlBuilder.append("&" + URLEncoder.encode("contentSeq","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*콘텐츠 번호*/
+        URL url = new URL(urlBuilder.toString());
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.setRequestProperty("Content-type", "application/json");
+        System.out.println("Response code: " + conn.getResponseCode());
+        BufferedReader rd;
+        if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
+            rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        } else {
+            rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+        }
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+        conn.disconnect();
+        System.out.println(sb.toString());
+    }
+}
+                                </pre>
+                            </div>
+
+
+                        </div> <!-- //content -->
 
                     </div>
                     <!-- //content_box -->

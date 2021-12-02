@@ -55,7 +55,10 @@ main{overflow: hidden;}
 #header ul.link li{display: inline-block; }
 #header ul.link li a{display: inline-block; padding: 0 21px; /*padding: 8px 0 12px 0; padding: 0 22px;*/ font-weight: 500; color: #fff; font-size: 16px;}
 #header .btn_sitemap_box{position: absolute; top:6px; right:0;}
+#header .btn_sitemap_box button.btn_sitemap{width: 30px; height: 30px; background: url(../images/common/sp_new.png)no-repeat -745px -105px; background-size: 960px 480px; vertical-align: top;}
 #header .btn_sitemap_box button.btn_sitemap{width: 30px; height: 24px; background: url(../images/common/sp_new.png)no-repeat -25px -108px; background-size: 960px 480px; vertical-align: top;}
+#header .btn_sitemap_box button.mobile_open.active{width: 30px; height: 30px; background: url(../images/common/sp_new.png)no-repeat -745px -105px; background-size: 960px 480px; vertical-align: top;}
+#header .btn_sitemap_box button.mobile_open{display: none; width: 30px; height: 24px; background: url(../images/common/sp_new.png)no-repeat -25px -108px; background-size: 960px 480px; vertical-align: top;}
 #header #sitemap{display: none; max-width: 1400px; width: 100%; padding: 80px 0 0 80px; position: fixed; top:40px; left:50%; transform: translateX(-50%); right:0; height: 600px; background: #f2f5fa; border-radius: 30px; z-index: 99;}
 #header #sitemap .sitemap_logo{float: left; width: 248px; margin-right: 119px;}
 #header #sitemap .sitemap_logo h1{}
@@ -73,6 +76,30 @@ main{overflow: hidden;}
 #header #sitemap .sitemap_close{position: absolute; top: 81px; right: 80px; width: 30px; height: 30px; background: url(../images/common/sp_new.png)no-repeat -745px -105px; background-size: 960px 480px;}
 .sitemap_bg{display: none; position: fixed; left:0; right:0; bottom: 0; top:0; background: rgba(0,0,0,.5); z-index: 98;}
 
+#header #mobile_menu{display: none; position: fixed; top:80px; right: -3000px; bottom: 0; width: 100%; background: #fff;}
+#header #mobile_menu .sns{margin: 0 10px 0 0; right: 0; left: -285px; top: 52%;}
+#header #mobile_menu .box{position: relative; padding: 12px 0; border-bottom: 1px solid #c1c1c1; background: #046fd9; font-size: 0; text-align: center;}
+#header #mobile_menu .box > a{position: relative; z-index: 99; display: inline-block; margin: 0 10.5px; height: 26px; line-height: 26px; width: 90px; box-shadow: 1px 3px 2px rgb(0 53 143) inset; background: #0054a8; border-radius: 30px; text-align:center; font-size: 14px; color: #fff;}
+#header #mobile_menu .box > a.logout{color: #2653a8; background: #f0f0f0; font-weight: 700; box-shadow: none;}
+#header #mobile_menu ul.mobile_menu_depth1 li h2 a{position: relative; padding: 19px 0 17px 20px; display: block; font-size: 15px; color:#000; font-weight: 700; border-bottom: 1px solid #c1c1c1;}
+#header #mobile_menu ul.mobile_menu_depth1 li h2 a::after{content: ""; width: 10px; height: 10px; position: absolute; top: 50%; transform: translateY(-50%); right:36px; background: url(../images/common/sp_icon.png)no-repeat -140px -264px; background-size: 520px 1500px;}
+#header #mobile_menu ul.mobile_menu_depth1 li h2.active a::after{background: url(../images/common/sp_icon.png)no-repeat -106px -266px; background-size: 520px 1500px; width: 10px; height: 3px;}
+#header #mobile_menu ul.mobile_menu_depth2{display: none; padding: 9px 0 10px 0; background: #e6eef1;}
+#header #mobile_menu ul.mobile_menu_depth2 li h3 a{position: relative; display: block; padding: 6.5px 0 6.5px 25px; font-size: 13px; color: #000;}
+#header #mobile_menu ul.mobile_menu_depth2 li h3 a::before{content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 39px; background: url(../images/common/sp_icon.png)no-repeat -127px -265px; width: 4px; height: 7px; background-size: 520px 1500px;}
+#header #mobile_menu ul.mobile_menu_depth2 li h3.depth2 a::after{content: ""; width: 10px; height: 10px; position: absolute; top: 50%; transform: translateY(-50%) scale(0.9); right:36px; background: url(../images/common/sp_icon.png)no-repeat -140px -263px; background-size: 520px 1500px;}
+#header #mobile_menu ul.mobile_menu_depth2 li h3.depth2.active a::after{background: url(../images/common/sp_icon.png)no-repeat -106px -266px; background-size: 520px 1500px; width: 10px; height: 3px;}
+#header #mobile_menu ul.mobile_menu_depth2 li h3.depth2 a::before{display: none;}
+#header #mobile_menu ul.mobile_menu_depth3{display: none; padding: 5px 0;}
+#header #mobile_menu ul.mobile_menu_depth3 li h4 a{position: relative; display: block; padding: 6px 0 6px 30px; font-size: 12px; color: #000;}
+#header #mobile_menu ul.mobile_menu_depth3 li h4 a::before{content: ""; position: absolute; top: 50%; transform: translateY(-50%) scale(0.9); right: 39px; background: url(../images/common/after2.png)no-repeat; width: 4px; height: 7px; }
+#header #mobile_menu .sns{position: absolute; top: 53%; right:248px; transform: translateY(-50%); font-size: 0;}
+#header #mobile_menu .sns a:last-child{margin-right: 0;}
+#header #mobile_menu .sns a{display: inline-block; margin-right: 6px; width: 27px; height: 27px; background: url(../images/common/sp_icon.png)no-repeat; background-size: 520px 1500px; transition: all .3s; image-rendering: -webkit-optimize-contrast;}
+#header #mobile_menu .sns a.insta{background-position: -366px -286px;}
+#header #mobile_menu .sns a.kakao{background-position: -407px -287px;}
+#header #mobile_menu .sns a:hover{transform: scale(1.13);}
+
 @media (max-width: 1400px) {
 
     #header nav{width: calc(100% - 676px); margin: 0;}
@@ -82,6 +109,9 @@ main{overflow: hidden;}
 }
 
 @media (max-width: 1199px) {
+
+    body{position: relative!important;}
+    body.fixed{position: fixed!important;}
 
     #header #sitemap{display: none!important;}
     .sitemap_bg{display: none!important;}
@@ -93,19 +123,42 @@ main{overflow: hidden;}
 
     #header .btn_sitemap_box{top:50%; transform: translateY(-50%);}
 
+    #header #mobile_menu .sns{left: -280px;}
+    #header #mobile_menu{display: block;}
+
+    #header .sns a{margin-right: 8px;}
+
+    #header .btn_sitemap_box button.btn_sitemap{display: none;}
+    #header .btn_sitemap_box button.mobile_open{display: block;}
+
+}
+
+@media (max-width: 480px) {
+
+    #header #mobile_menu .box{padding: 30px 0 12px 0;}
+    #header #mobile_menu .sns{position: static; margin: 0 0 3px;}
+
+    #mobile_menu .sns{position: static; margin: 0 0 3px;}
+
+}
+
+@media (max-width: 340px) {
+
+    #header #mobile_menu .box > a{margin: 0 4px;}
+
 }
 
 /* footer */
-#footer{padding: 80px 0 79px; background: #f1f4fa;}
+#footer{padding: 75px 0; background: #e4e8f2;}
 #footer .footer{position: relative;}
 #footer .logo{float: left; margin-right: 102px;}
 #footer .logo a{display: inline-block; vertical-align: top; width: 248px; height: 32px; background: url(../images/common/sp_new.png)no-repeat -676px -24px; background-size: 960px 480px;}
 #footer .logo a img{display: block;}
-#footer .box{float: left; }
-#footer .box p{margin-bottom: 49px;}
+#footer .box{overflow: hidden;}
+#footer .box p{float: left; }
 #footer .box p span{display: block; margin-bottom: 10px; font-size: 14px; color: #111;}
 #footer .box p strong{display: block; font-size: 24px; font-weight: 600; color: #111; line-height: 0.9;}
-#footer .box address{font-size: 14px; color: #111; font-style: normal; line-height: 25px;}
+#footer .box address{margin-left: 87px; float: left; font-size: 14px; color: #111; font-style: normal; line-height: 25px;}
 #footer .link{width: 220px; position: absolute; bottom: 5px; right:0;}
 #footer .link > a{position: relative; display: block; height: 44px; line-height: 44px; padding-left: 11px; font-size: 14px; font-weight: 300; color: #111; border-bottom: 1px solid #111; }
 #footer .link > a::after{content: ""; position: absolute; top: 50%; margin-top: -6px; right:10px; width: 20px; height: 12px; background: url(../images/common/link_icon.png)no-repeat; transition: all .3s;}
@@ -116,16 +169,10 @@ main{overflow: hidden;}
 
 @media (max-width:1199px) {
 
-    #footer{padding: 60px 0;}
-
-}
-
-@media (max-width:1024px) {
-
-    #footer{padding: 40px 0;}
+    #footer{padding: 60px 0 50px;}
     #footer .logo{float: none; width: 100%; text-align: center; margin-bottom: 30px;}
     #footer .link{position: relative; margin: 0 auto 30px;}
     #footer .box{float: none; text-align: center;}
-    #footer .box p{margin-bottom: 30px;}
-
+    #footer .box p{float: none; margin-bottom: 30px;}
+    #footer .box address{float: none; margin: 0;}
 }
