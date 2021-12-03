@@ -384,7 +384,7 @@
 
                         <a href="#A-Contents-focus" id="A-Contents-focus" class="blind">본문 시작</a>
                         <div class="content">
-                            <ul class="pageTab">
+                            <ul class="pageTab clearfix">
                                 <li class="active">
                                     <a href="/portal/happysokcho/parttask/planInspec/pitask" class="pageTab-tab">
                                         TAPmenu
@@ -416,73 +416,22 @@
                             <div class="boSrchArea">
                                 <div class="boMeta">
                                     <span class="boMeta-pt"> 총 </span>
-                                    <span>108건 | 페이지 1/9</span>
+                                    <span class="color">(000건)</span>
                                 </div>
-                                <form id="dataContentVO" class="boSrch" action="/pet/tour/spot" method="post">
-                                    <input type="hidden" name="_csrf" value="b57bad6d-1ed5-4c94-9e1a-9f0fbb0b0214">
-                                    <input type="hidden" name="pageIndex" value="1">
-                                    <input type="hidden" name="pardCode" value="PC03">
-                                    <input type="hidden" name="orderBy" value="contentSeq">
-                                    <input type="hidden" name="searchCondition" value="TITLE">
-                                    <fieldset>
-                                        <legend class="blind">지역 선택</legend>
-                                        <select name="areaCode" class="boSrch-selectBox skinSelectBox">
-                                            <option value="">지역</option>
-
-                                            <option value="AC01">춘천시</option>
-
-                                            <option value="AC02">원주시</option>
-
-                                            <option value="AC03">강릉시</option>
-
-                                            <option value="AC04">동해시</option>
-
-                                            <option value="AC05">태백시</option>
-
-                                            <option value="AC06">속초시</option>
-
-                                            <option value="AC07">삼척시</option>
-
-                                            <option value="AC08">홍천군</option>
-
-                                            <option value="AC09">횡성군</option>
-
-                                            <option value="AC10">영월군</option>
-
-                                            <option value="AC11">평창군</option>
-
-                                            <option value="AC12">정선군</option>
-
-                                            <option value="AC13">철원군</option>
-
-                                            <option value="AC14">화천군</option>
-
-                                            <option value="AC15">양구군</option>
-
-                                            <option value="AC16">인제군</option>
-
-                                            <option value="AC17">고성군</option>
-
-                                            <option value="AC18">양양군</option>
-
-                                        </select>
-
-                                        <legend class="blind">검색어</legend>
-                                        <input type="text" name="searchKeyword" class="boSrch-iptTxt skinIptTxt" value="" placeholder="검색어를 입력해 주세요.">
-                                        <input type="submit" value="검색" class="boSrch-btnBo skinBtnBo skinBtnBo-data-pos btn-search">
-                                    </fieldset>
-                                    <div>
-                                        <input type="hidden" name="_csrf" value="b57bad6d-1ed5-4c94-9e1a-9f0fbb0b0214">
-                                    </div>
-                                </form>
+                                <div class="search_box">
+                                    <input id="search" type="text" placeholder="검색어를 입력해보세요!">
+                                    <label for="search"><span class="blind">검색어입력</span></label>
+                                    <a href="#"><span class="blind">검색</span></a>
+                                </div>
                             </div>
                             <!-- //boSrchTotalArea-->
 
+                            <!--
                             <div class="btn3">
                                 <button class="btn3_1 btn-board-order active" data-order="contentSeq">전체</button>
                                 <button class="btn3_2 btn-board-order " data-order="title">‘가나다’순</button>
                             </div>
-                            <!-- //btn3 -->
+            btn3 -->
 
                             <div class="box">
                                 <h4>

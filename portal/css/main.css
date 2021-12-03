@@ -4,15 +4,21 @@ main{overflow: hidden;}
 /* section1 */
 #section1{}
 #section1 .visual{padding: 0 0 331px 0; position: relative; background: url(../images/main/bg.jpg)no-repeat center 0; background-size: cover;}
+#section1 .visual .box{position:absolute; top:33px; left: 33px; width: 500px; height: 500px; overflow: hidden; border-radius: 50%;} 
+#section1 .visual .box img{display: block; position: absolute; top:0; left:0; right:0; bottom: 0; }
+
+
 
 #section1 .visual .reading_glasses_wrap{position: absolute; top:168px; width: 100%; height: 732px;}
 #section1 .visual .reading_glasses_wrap .container{position: relative; height: 100%;}
 #section1 .visual .reading_glasses_wrap .reading_glasses_box{position: absolute; top:0; left: calc(100% - 542px); width: 793px; height: 733px; }
 #section1 .visual .reading_glasses_wrap .reading_glasses_box::after{content: "";position: absolute; top: 0; right:0; width: 793px; height: 733px; background: url(../images/main/reading_glasses.png)no-repeat; z-index: 1;}
 #section1 .visual .reading_glasses_wrap .reading_glasses_box .box1{width: 561px; height: 562px; position: relative; overflow: hidden;}
+/*
 #section1 .visual .reading_glasses_wrap .reading_glasses_box .box1 .swiper-wrapper{position: absolute; top:0; left: 0; right: 0; bottom: 0; width: 561px; height: 562px; border-radius: 50%; transform: translate(-50%, -50%);}
-#section1 .visual .reading_glasses_wrap .reading_glasses_box .box1 .swiper-wrapper > div{width: 500px; position: relative;}
-#section1 .visual .reading_glasses_wrap .reading_glasses_box .box1 .swiper-wrapper img{position: absolute; top:50.2%; left:50.1%; transform: translate(-50%, -50%); width: 500px!important; height: 500px; border-radius: 50%; image-rendering: -webkit-optimize-contrast;}
+*/
+#section1 .visual .reading_glasses_wrap .reading_glasses_box .box1 .swiper-wrapper > div{width: 500px!important;  position: relative;}
+#section1 .visual .reading_glasses_wrap .reading_glasses_box .box1 .swiper-wrapper img{position: absolute; top:50.2%; left:50.1%; transform: translate(-50%, -50%); width: 500px!important; height: 500px; image-rendering: -webkit-optimize-contrast;}
 #section1 .visual .reading_glasses_wrap .control_box{position: absolute; top: 510px; left:0; width: 100%;}
 #section1 .visual .reading_glasses_wrap .control_box .swiper-pagination{position: static; width: 110px; float: left; height: 10px;}
 #section1 .visual .reading_glasses_wrap .control_box .swiper-pagination-bullet{float: left; margin-right: 10px; width: 10px; height: 10px; text-indent: 100%; white-space: nowrap; overflow: hidden; border-radius: 50%; transition: all .5s; background: #fff; border: 0; vertical-align: top;}

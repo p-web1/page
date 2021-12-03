@@ -33,6 +33,18 @@ $(function() {
     });
 
     /* tab */
+    $('.statistics_box .right').hide();
+    $('.statistics_box .right').first().show();
+    $('.statistics_box .left .tab1 a').click(function() {
+        $('.statistics_box .left .tab1 a').removeClass('active');
+        $(this).addClass('active');
+        var Idx = $(this).index();
+        $('.statistics_box .right').hide();
+        $('.statistics_box .right').eq(Idx).show();
+        return false;
+    });
+
+    /* tab */
     if (!$(".tab_box .tab").hasClass("mobile")) {
         $(".tab_box .tab").addClass("mobile");
         if ($(".tab_box .tab .swiper-slide-active").size() == 0) {

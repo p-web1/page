@@ -329,6 +329,7 @@ function p_pageTabAutoHeight(){
 		p_ctrlHeight();
 	});
 }
+
 */
 
 function p_customDaumMapApi(m){
@@ -769,7 +770,7 @@ function modal(trigger) {
     var modalTarget = trigger.attr('data-id');
     var btnClose = $(modalTarget).find('.btn-close');
     var btnCancle = $(modalTarget).find('.btn-cancel');
-    $('body').append('<div class="modal-overlay"></div>');
+    if ($(".modal-overlay").length < 1) $('body').append('<div class="modal-overlay"></div>');
     $(modalTarget).addClass('modal-show').attr('tabindex', '0');
     setTimeout(function() {
         $(modalTarget).focus();
@@ -795,6 +796,15 @@ function modal(trigger) {
     $('.modal-overlay').on('click', function(e) {
         btnClose.click();
     });
+}
+
+function modal_custom(trigger, $target) {
+	if ($target.length > 0) {
+		$($target[0]).before('<div class="modal-overlay"></div>');
+	} else {
+		return;
+	}
+	modal(trigger);
 }
 
 
@@ -842,15 +852,21 @@ $(function(){
 	//// 프로그래스 
 	//progressbar();
 
-	$('.pageTab > li.active > a').on('click', function () {
-		$(this).parents('.pageTab').toggleClass('on');
-		return false;
-	});
+	//modal 최하단으로 이동
+	var modals = $('section.modal');
+	if (modals.length > 0) {
+		$('body').append(modals);
+	}
 
 	$( window ).on( 'resize load', function( ) {
 		var tabH = $('.pageTab-sub').height() + 20;
 		$('.pageTab').css('padding-bottom',tabH);
 		$('.pageTab-sub').parents('.pageTab').addClass('has');
+	});
+
+	$('.pageTab > li.active > a').on('click', function () {
+		$(this).parents('.pageTab').toggleClass('on');
+		return false;
 	});
 
 	$('.pageTab-sub > li.active > a').on('click', function () {
@@ -883,10 +899,14 @@ $(function(){
 	$('.table-style5 button').on('focusout', function() {
 		$(this).mouseleave();
 	});
-	$('.btn-modal').on('click', function(e) {
+	// $('.btn-modal').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	modal($(this));
+	// });
+	$('.btn-modal-cus').bind('click keypress', function (e) {
 		e.preventDefault();
-		modal($(this));
+		modal_custom($(this), $("section.modal"));
 	});
 
-
+	
 });
